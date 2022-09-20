@@ -39,7 +39,7 @@ api_options = [
 
 
 api_dict = {
-    "accidentStats": "https://api.tfl.gov.uk/AccidentStats/{year}",
+    "AccidentStats": "https://api.tfl.gov.uk/AccidentStats/{year}",
     "AirQuality": "https://api.tfl.gov.uk/AirQuality/",
     "BikePoint": "https://api.tfl.gov.uk/BikePoint/",
     "Journey": "https://api.tfl.gov.uk/Journey",
@@ -54,11 +54,11 @@ api_dict = {
 
 
 def main():
-    st.sidebar.image('Assets/LU_logo.jpg', use_column_width=True)
+    st.sidebar.image('resources/images/LU_logo.jpg', use_column_width=True)
     page_selection = st.sidebar.selectbox("PAGE SELECTION", page_options)
 
     if page_selection == "Landing Page":
-        add_bg_from_local('Assets/Landing_Page_Background.jpg')
+        add_bg_from_local('resources/images/Landing_Page_Background.jpg')
 
     if page_selection == "Live Feed":
         api_selection = st.selectbox("API SELECTION", api_options)
