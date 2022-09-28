@@ -1,0 +1,749 @@
+from_naptan,to_naptan,from_station,to_station,line,direction,line_direction,platform_direction
+940GZZLUHRC,940GZZLUHR5,"Heathrow Terminals 1,2,3",Heathrow Terminal 5,Piccadilly,Inbound,WB,WB
+940GZZLUHRC,940GZZLUHNX,"Heathrow Terminals 1,2,3",Hatton Cross,Piccadilly,Outbound,EB,EB
+940GZZLUACT,940GZZLUSEA,Acton Town,South Ealing,Piccadilly,Inbound,WB,WB
+940GZZLUACT,940GZZLUECM,Acton Town,Ealing Common,Piccadilly,Inbound,WB,WB
+940GZZLUACT,940GZZLUTNG,Acton Town,Turnham Green,Piccadilly,Outbound,EB,EB
+940GZZLUACT,940GZZLUECM,Acton Town,Ealing Common,District,Inbound,WB,WB
+940GZZLUACT,940GZZLUCWP,Acton Town,Chiswick Park,District,Outbound,EB,EB
+940GZZLUALD,940GZZLULVT,Aldgate,Liverpool Street,Metropolitan,Inbound,NB,NB
+940GZZLUALD,940GZZLUTWH,Aldgate,Tower Hill,Circle,Outbound,OR,SB
+940GZZLUALD,940GZZLULVT,Aldgate,Liverpool Street,Circle,Inbound,IR,NB
+940GZZLUADE,940GZZLUTWH,Aldgate East,Tower Hill,District,Inbound,WB,WB
+940GZZLUADE,940GZZLUWPL,Aldgate East,Whitechapel,District,Outbound,EB,EB
+940GZZLUADE,940GZZLUWPL,Aldgate East,Whitechapel,Hammersmith & City,Outbound,EB,EB
+940GZZLUADE,940GZZLULVT,Aldgate East,Liverpool Street,Hammersmith & City,Inbound,WB,WB
+940GZZLUALP,940GZZLUSUT,Alperton,Sudbury Town,Piccadilly,Inbound,WB,WB
+940GZZLUALP,940GZZLUPKR,Alperton,Park Royal,Piccadilly,Outbound,EB,EB
+940GZZLUAMS,940GZZLUCAL,Amersham,Chalfont & Latimer,Metropolitan,Outbound,SB,SB
+940GZZLUAGL,940GZZLUKSX,Angel,King's Cross St Pancras,Northern,Outbound,NB,NB
+940GZZLUAGL,940GZZLUODS,Angel,Old Street,Northern,Inbound,SB,SB
+940GZZLUACY,940GZZLUHGT,Archway,Highgate,Northern,Outbound,NB,NB
+940GZZLUACY,940GZZLUTFP,Archway,Tufnell Park,Northern,Inbound,SB,SB
+940GZZLUASG,940GZZLUBDS,Arnos Grove,Bounds Green,Piccadilly,Inbound,WB,WB
+940GZZLUASG,940GZZLUSGT,Arnos Grove,Southgate,Piccadilly,Outbound,EB,EB
+940GZZLUASL,940GZZLUHWY,Arsenal,Holloway Road,Piccadilly,Inbound,WB,WB
+940GZZLUASL,940GZZLUFPK,Arsenal,Finsbury Park,Piccadilly,Outbound,EB,EB
+940GZZLUBST,940GZZLURGP,Baker Street,Regent's Park,Bakerloo,Inbound,SB,SB
+940GZZLUBST,940GZZLUMYB,Baker Street,Marylebone,Bakerloo,Outbound,NB,NB
+940GZZLUBST,940GZZLUBND,Baker Street,Bond Street,Jubilee,Outbound,EB,SB
+940GZZLUBST,940GZZLUSJW,Baker Street,St John's Wood,Jubilee,Inbound,WB,NB
+940GZZLUBST,940GZZLUGPS,Baker Street,Great Portland Street,Metropolitan,Outbound,SB,SB
+940GZZLUBST,940GZZLUFYR,Baker Street,Finchley Road,Metropolitan,Inbound,NB,NB
+940GZZLUBST,940GZZLUGPS,Baker Street,Great Portland Street,Hammersmith & City,Outbound,EB,EB
+940GZZLUBST,940GZZLUERC,Baker Street,Edgware Road,Hammersmith & City,Inbound,WB,WB
+940GZZLUBST,940GZZLUGPS,Baker Street,Great Portland Street,Circle,Outbound,OR,EB
+940GZZLUBST,940GZZLUERC,Baker Street,Edgware Road,Circle,Inbound,IR,WB
+940GZZLUBLM,940GZZLUCPS,Balham,Clapham South,Northern,Outbound,NB,NB
+940GZZLUBLM,940GZZLUTBC,Balham,Tooting Bec,Northern,Inbound,SB,SB
+940GZZLUBNK,940GZZLUSPU,Bank,St Paul's,Central,Inbound,WB,WB
+940GZZLUBNK,940GZZLULVT,Bank,Liverpool Street,Central,Outbound,EB,EB
+940GZZLUBNK,940GZZLUMGT,Bank,Moorgate,Northern,Outbound,NB,NB
+940GZZLUBNK,940GZZLULNB,Bank,London Bridge,Northern,Inbound,SB,SB
+940GZZLUBNK,940GZZLUWLO,Bank,Waterloo,Waterloo & City,Inbound,WB,WB
+940GZZLUBBN,940GZZLUMGT,Barbican,Moorgate,Metropolitan,Outbound,SB,EB
+940GZZLUBBN,940GZZLUFCN,Barbican,Farringdon,Metropolitan,Inbound,NB,WB
+940GZZLUBBN,940GZZLUMGT,Barbican,Moorgate,Hammersmith & City,Outbound,EB,EB
+940GZZLUBBN,940GZZLUFCN,Barbican,Farringdon,Hammersmith & City,Inbound,WB,WB
+940GZZLUBBN,940GZZLUMGT,Barbican,Moorgate,Circle,Outbound,OR,EB
+940GZZLUBBN,940GZZLUFCN,Barbican,Farringdon,Circle,Inbound,IR,WB
+940GZZLUBKG,940GZZLUEHM,Barking,East Ham,District,Inbound,WB,WB
+940GZZLUBKG,940GZZLUUPY,Barking,Upney,District,Outbound,EB,EB
+940GZZLUBKG,940GZZLUEHM,Barking,East Ham,Hammersmith & City,Inbound,WB,WB
+940GZZLUBKE,940GZZLUNBP,Barkingside,Newbury Park,Central,Inbound,WB,WB
+940GZZLUBKE,940GZZLUFLP,Barkingside,Fairlop,Central,Outbound,EB,EB
+940GZZLUBSC,940GZZLUHSD,Barons Court,Hammersmith,Piccadilly,Inbound,WB,WB
+940GZZLUBSC,940GZZLUECT,Barons Court,Earl's Court,Piccadilly,Outbound,EB,EB
+940GZZLUBSC,940GZZLUHSD,Barons Court,Hammersmith,District,Inbound,WB,WB
+940GZZLUBSC,940GZZLUWKN,Barons Court,West Kensington,District,Outbound,EB,EB
+940GZZLUBWT,940GZZLUPAH,Bayswater,Paddington,District,Outbound,EB,EB
+940GZZLUBWT,940GZZLUNHG,Bayswater,Notting Hill Gate,District,Inbound,WB,WB
+940GZZLUBWT,940GZZLUPAH,Bayswater,Paddington,Circle,Outbound,OR,WB
+940GZZLUBWT,940GZZLUNHG,Bayswater,Notting Hill Gate,Circle,Inbound,IR,EB
+940GZZLUBEC,940GZZLUUPY,Becontree,Upney,District,Inbound,WB,WB
+940GZZLUBEC,940GZZLUDGY,Becontree,Dagenham Heathway,District,Outbound,EB,EB
+940GZZLUBZP,940GZZLUHTD,Belsize Park,Hampstead,Northern,Outbound,NB,NB
+940GZZLUBZP,940GZZLUCFM,Belsize Park,Chalk Farm,Northern,Inbound,SB,SB
+940GZZLUBMY,940GZZLUCWR,Bermondsey,Canada Water,Jubilee,Outbound,EB,EB
+940GZZLUBMY,940GZZLULNB,Bermondsey,London Bridge,Jubilee,Inbound,WB,WB
+940GZZLUBLG,940GZZLULVT,Bethnal Green,Liverpool Street,Central,Inbound,WB,WB
+940GZZLUBLG,940GZZLUMED,Bethnal Green,Mile End,Central,Outbound,EB,EB
+940GZZLUBKF,940GZZLUTMP,Blackfriars,Temple,District,Inbound,WB,WB
+940GZZLUBKF,940GZZLUMSH,Blackfriars,Mansion House,District,Outbound,EB,EB
+940GZZLUBKF,940GZZLUTMP,Blackfriars,Temple,Circle,Outbound,OR,WB
+940GZZLUBKF,940GZZLUMSH,Blackfriars,Mansion House,Circle,Inbound,IR,EB
+940GZZLUBLR,940GZZLUWWL,Blackhorse Road,Walthamstow Central,Victoria,Outbound,NB,NB
+940GZZLUBLR,940GZZLUTMH,Blackhorse Road,Tottenham Hale,Victoria,Inbound,SB,SB
+940GZZLUBND,940GZZLUMBA,Bond Street,Marble Arch,Central,Inbound,WB,WB
+940GZZLUBND,940GZZLUOXC,Bond Street,Oxford Circus,Central,Outbound,EB,EB
+940GZZLUBND,940GZZLUGPK,Bond Street,Green Park,Jubilee,Outbound,EB,SB
+940GZZLUBND,940GZZLUBST,Bond Street,Baker Street,Jubilee,Inbound,WB,NB
+940GZZLUBOR,940GZZLULNB,Borough,London Bridge,Northern,Outbound,NB,NB
+940GZZLUBOR,940GZZLUEAC,Borough,Elephant & Castle,Northern,Inbound,SB,SB
+940GZZLUBOS,940GZZLUOSY,Boston Manor,Osterley,Piccadilly,Inbound,WB,WB
+940GZZLUBOS,940GZZLUNFD,Boston Manor,Northfields,Piccadilly,Outbound,EB,EB
+940GZZLUBDS,940GZZLUWOG,Bounds Green,Wood Green,Piccadilly,Inbound,WB,WB
+940GZZLUBDS,940GZZLUASG,Bounds Green,Arnos Grove,Piccadilly,Outbound,EB,EB
+940GZZLUBWR,940GZZLUMED,Bow Road,Mile End,District,Inbound,WB,WB
+940GZZLUBWR,940GZZLUBBB,Bow Road,Bromley-By-Bow,District,Outbound,EB,EB
+940GZZLUBWR,940GZZLUBBB,Bow Road,Bromley-By-Bow,Hammersmith & City,Outbound,EB,EB
+940GZZLUBWR,940GZZLUMED,Bow Road,Mile End,Hammersmith & City,Inbound,WB,WB
+940GZZLUBTX,940GZZLUHCL,Brent Cross,Hendon Central,Northern,Outbound,NB,NB
+940GZZLUBTX,940GZZLUGGN,Brent Cross,Golders Green,Northern,Inbound,SB,SB
+940GZZLUBXN,940GZZLUSKW,Brixton,Stockwell,Victoria,Outbound,NB,NB
+940GZZLUBBB,940GZZLUBWR,Bromley-By-Bow,Bow Road,District,Inbound,WB,WB
+940GZZLUBBB,940GZZLUWHM,Bromley-By-Bow,West Ham,District,Outbound,EB,EB
+940GZZLUBBB,940GZZLUWHM,Bromley-By-Bow,West Ham,Hammersmith & City,Outbound,EB,EB
+940GZZLUBBB,940GZZLUBWR,Bromley-By-Bow,Bow Road,Hammersmith & City,Inbound,WB,WB
+940GZZLUBKH,940GZZLUWOF,Buckhurst Hill,Woodford,Central,Inbound,WB,WB
+940GZZLUBKH,940GZZLULGN,Buckhurst Hill,Loughton,Central,Outbound,EB,EB
+940GZZLUBTK,940GZZLUEGW,Burnt Oak,Edgware,Northern,Outbound,NB,NB
+940GZZLUBTK,940GZZLUCND,Burnt Oak,Colindale,Northern,Inbound,SB,SB
+940GZZLUCAR,940GZZLUKSX,Caledonian Road,King's Cross St Pancras,Piccadilly,Inbound,WB,WB
+940GZZLUCAR,940GZZLUHWY,Caledonian Road,Holloway Road,Piccadilly,Outbound,EB,EB
+940GZZLUCTN,940GZZLUKSH,Camden Town,Kentish Town,Northern,Outbound,NB,NB
+940GZZLUCTN,940GZZLUCFM,Camden Town,Chalk Farm,Northern,Outbound,NB,NB
+940GZZLUCTN,940GZZLUMTC,Camden Town,Mornington Crescent,Northern,Inbound,SB,SB
+940GZZLUCTN,940GZZLUEUS,Camden Town,Euston,Northern,Inbound,SB,SB
+940GZZLUCWR,940GZZLUCYF,Canada Water,Canary Wharf,Jubilee,Outbound,EB,EB
+940GZZLUCWR,940GZZLUBMY,Canada Water,Bermondsey,Jubilee,Inbound,WB,WB
+940GZZLUCYF,940GZZLUNGW,Canary Wharf,North Greenwich,Jubilee,Outbound,EB,EB
+940GZZLUCYF,940GZZLUCWR,Canary Wharf,Canada Water,Jubilee,Inbound,WB,WB
+940GZZLUCGT,940GZZLUWHM,Canning Town,West Ham,Jubilee,Outbound,EB,EB
+940GZZLUCGT,940GZZLUNGW,Canning Town,North Greenwich,Jubilee,Inbound,WB,WB
+940GZZLUCST,940GZZLUMSH,Cannon Street,Mansion House,District,Inbound,WB,WB
+940GZZLUCST,940GZZLUMMT,Cannon Street,Monument,District,Outbound,EB,EB
+940GZZLUCST,940GZZLUMSH,Cannon Street,Mansion House,Circle,Outbound,OR,WB
+940GZZLUCST,940GZZLUMMT,Cannon Street,Monument,Circle,Inbound,IR,EB
+940GZZLUCPK,940GZZLUQBY,Canons Park,Queensbury,Jubilee,Outbound,EB,SB
+940GZZLUCPK,940GZZLUSTM,Canons Park,Stanmore,Jubilee,Inbound,WB,NB
+940GZZLUCAL,940GZZLUCYD,Chalfont & Latimer,Chorleywood,Metropolitan,Outbound,SB,SB
+940GZZLUCAL,940GZZLUCSM,Chalfont & Latimer,Chesham,Metropolitan,Inbound,NB,NB
+940GZZLUCAL,940GZZLUAMS,Chalfont & Latimer,Amersham,Metropolitan,Inbound,NB,NB
+940GZZLUCFM,940GZZLUBZP,Chalk Farm,Belsize Park,Northern,Outbound,NB,NB
+940GZZLUCFM,940GZZLUCTN,Chalk Farm,Camden Town,Northern,Inbound,SB,SB
+940GZZLUCHL,940GZZLUHBN,Chancery Lane,Holborn,Central,Inbound,WB,WB
+940GZZLUCHL,940GZZLUSPU,Chancery Lane,St Paul's,Central,Outbound,EB,EB
+940GZZLUCHX,940GZZLUEMB,Charing Cross,Embankment,Bakerloo,Inbound,SB,SB
+940GZZLUCHX,940GZZLUPCC,Charing Cross,Piccadilly Circus,Bakerloo,Outbound,NB,NB
+940GZZLUCHX,940GZZLULSQ,Charing Cross,Leicester Square,Northern,Outbound,NB,NB
+940GZZLUCHX,940GZZLUEMB,Charing Cross,Embankment,Northern,Inbound,SB,SB
+940GZZLUCSM,940GZZLUCAL,Chesham,Chalfont & Latimer,Metropolitan,Outbound,SB,SB
+940GZZLUCWL,940GZZLUGGH,Chigwell,Grange Hill,Central,Inbound,WB,WB
+940GZZLUCWL,940GZZLURVY,Chigwell,Roding Valley,Central,Outbound,EB,EB
+940GZZLUCWP,940GZZLUACT,Chiswick Park,Acton Town,District,Inbound,WB,WB
+940GZZLUCWP,940GZZLUTNG,Chiswick Park,Turnham Green,District,Outbound,EB,EB
+940GZZLUCYD,940GZZLURKW,Chorleywood,Rickmansworth,Metropolitan,Outbound,SB,SB
+940GZZLUCYD,940GZZLUCAL,Chorleywood,Chalfont & Latimer,Metropolitan,Inbound,NB,NB
+940GZZLUCPC,940GZZLUCPN,Clapham Common,Clapham North,Northern,Outbound,NB,NB
+940GZZLUCPC,940GZZLUCPS,Clapham Common,Clapham South,Northern,Inbound,SB,SB
+940GZZLUCPN,940GZZLUSKW,Clapham North,Stockwell,Northern,Outbound,NB,NB
+940GZZLUCPN,940GZZLUCPC,Clapham North,Clapham Common,Northern,Inbound,SB,SB
+940GZZLUCPS,940GZZLUCPC,Clapham South,Clapham Common,Northern,Outbound,NB,NB
+940GZZLUCPS,940GZZLUBLM,Clapham South,Balham,Northern,Inbound,SB,SB
+940GZZLUCKS,940GZZLUOAK,Cockfosters,Oakwood,Piccadilly,Inbound,WB,WB
+940GZZLUCND,940GZZLUBTK,Colindale,Burnt Oak,Northern,Outbound,NB,NB
+940GZZLUCND,940GZZLUHCL,Colindale,Hendon Central,Northern,Inbound,SB,SB
+940GZZLUCSD,940GZZLUTBY,Colliers Wood,Tooting Broadway,Northern,Outbound,NB,NB
+940GZZLUCSD,940GZZLUSWN,Colliers Wood,South Wimbledon,Northern,Inbound,SB,SB
+940GZZLUCGN,940GZZLULSQ,Covent Garden,Leicester Square,Piccadilly,Inbound,WB,WB
+940GZZLUCGN,940GZZLUHBN,Covent Garden,Holborn,Piccadilly,Outbound,EB,EB
+940GZZLUCXY,940GZZLUMPK,Croxley,Moor Park,Metropolitan,Outbound,SB,SB
+940GZZLUCXY,940GZZLUWAF,Croxley,Watford,Metropolitan,Inbound,NB,NB
+940GZZLUDGE,940GZZLUDGY,Dagenham East,Dagenham Heathway,District,Inbound,WB,WB
+940GZZLUDGE,940GZZLUEPK,Dagenham East,Elm Park,District,Outbound,EB,EB
+940GZZLUDGY,940GZZLUBEC,Dagenham Heathway,Becontree,District,Inbound,WB,WB
+940GZZLUDGY,940GZZLUDGE,Dagenham Heathway,Dagenham East,District,Outbound,EB,EB
+940GZZLUDBN,940GZZLULGN,Debden,Loughton,Central,Inbound,WB,WB
+940GZZLUDBN,940GZZLUTHB,Debden,Theydon Bois,Central,Outbound,EB,EB
+940GZZLUDOH,940GZZLUWIG,Dollis Hill,Willesden Green,Jubilee,Outbound,EB,SB
+940GZZLUDOH,940GZZLUNDN,Dollis Hill,Neasden,Jubilee,Inbound,WB,NB
+940GZZLUEBY,940GZZLUWTA,Ealing Broadway,West Acton,Central,Outbound,EB,EB
+940GZZLUEBY,940GZZLUECM,Ealing Broadway,Ealing Common,District,Outbound,EB,EB
+940GZZLUECM,940GZZLUNEN,Ealing Common,North Ealing,Piccadilly,Inbound,WB,WB
+940GZZLUECM,940GZZLUACT,Ealing Common,Acton Town,Piccadilly,Outbound,EB,EB
+940GZZLUECM,940GZZLUEBY,Ealing Common,Ealing Broadway,District,Inbound,WB,WB
+940GZZLUECM,940GZZLUACT,Ealing Common,Acton Town,District,Outbound,EB,EB
+940GZZLUECT,940GZZLUBSC,Earl's Court,Barons Court,Piccadilly,Inbound,WB,WB
+940GZZLUECT,940GZZLUGTR,Earl's Court,Gloucester Road,Piccadilly,Outbound,EB,EB
+940GZZLUECT,940GZZLUWKN,Earl's Court,West Kensington,District,Inbound,WB,WB
+940GZZLUECT,940GZZLUKOY,Earl's Court,Olympia,District,Inbound,WB,WB
+940GZZLUECT,940GZZLUHSK,Earl's Court,High Street Kensington,District,Outbound,EB,EB
+940GZZLUECT,940GZZLUWBN,Earl's Court,West Brompton,District,Inbound,WB,WB
+940GZZLUECT,940GZZLUGTR,Earl's Court,Gloucester Road,District,Outbound,EB,EB
+940GZZLUEAN,940GZZLUNAN,East Acton,North Acton,Central,Inbound,WB,WB
+940GZZLUEAN,940GZZLUWCY,East Acton,White City,Central,Outbound,EB,EB
+940GZZLUEFY,940GZZLUFYC,East Finchley,Finchley Central,Northern,Outbound,NB,NB
+940GZZLUEFY,940GZZLUHGT,East Finchley,Highgate,Northern,Inbound,SB,SB
+940GZZLUEHM,940GZZLUUPK,East Ham,Upton Park,District,Inbound,WB,WB
+940GZZLUEHM,940GZZLUBKG,East Ham,Barking,District,Outbound,EB,EB
+940GZZLUEHM,940GZZLUBKG,East Ham,Barking,Hammersmith & City,Outbound,EB,EB
+940GZZLUEHM,940GZZLUUPK,East Ham,Upton Park,Hammersmith & City,Inbound,WB,WB
+940GZZLUEPY,940GZZLUSFS,East Putney,Southfields,District,Inbound,WB,WB
+940GZZLUEPY,940GZZLUPYB,East Putney,Putney Bridge,District,Outbound,EB,EB
+940GZZLUEAE,940GZZLURSM,Eastcote,Ruislip Manor,Piccadilly,Inbound,WB,WB
+940GZZLUEAE,940GZZLURYL,Eastcote,Rayners Lane,Piccadilly,Outbound,EB,EB
+940GZZLUEAE,940GZZLURYL,Eastcote,Rayners Lane,Metropolitan,Outbound,SB,EB
+940GZZLUEAE,940GZZLURSM,Eastcote,Ruislip Manor,Metropolitan,Inbound,NB,WB
+940GZZLUEGW,940GZZLUBTK,Edgware,Burnt Oak,Northern,Inbound,SB,SB
+940GZZLUERB,940GZZLUMYB,Edgware Road,Marylebone,Bakerloo,Inbound,SB,SB
+940GZZLUERB,940GZZLUPAC,Edgware Road,Paddington,Bakerloo,Outbound,NB,NB
+940GZZLUERC,940GZZLUPAH,Edgware Road,Paddington,District,Inbound,WB,WB
+940GZZLUERC,940GZZLUBST,Edgware Road,Baker Street,Hammersmith & City,Outbound,EB,EB
+940GZZLUERC,940GZZLUPAH,Edgware Road,Paddington,Hammersmith & City,Inbound,WB,WB
+940GZZLUERC,940GZZLUBST,Edgware Road,Baker Street,Circle,Outbound,OR,EB
+940GZZLUERC,940GZZLUPAH,Edgware Road,Paddington,Circle,Inbound,IR,WB
+940GZZLUERC,940GZZLUPAH,Edgware Road,Paddington,Circle,Inbound,IR,WB
+940GZZLUEAC,940GZZLULBN,Elephant & Castle,Lambeth North,Bakerloo,Outbound,NB,NB
+940GZZLUEAC,940GZZLUBOR,Elephant & Castle,Borough,Northern,Outbound,NB,NB
+940GZZLUEAC,940GZZLUKNG,Elephant & Castle,Kennington,Northern,Inbound,SB,SB
+940GZZLUEPK,940GZZLUDGE,Elm Park,Dagenham East,District,Inbound,WB,WB
+940GZZLUEPK,940GZZLUHCH,Elm Park,Hornchurch,District,Outbound,EB,EB
+940GZZLUEMB,940GZZLUWLO,Embankment,Waterloo,Bakerloo,Inbound,SB,SB
+940GZZLUEMB,940GZZLUCHX,Embankment,Charing Cross,Bakerloo,Outbound,NB,NB
+940GZZLUEMB,940GZZLUCHX,Embankment,Charing Cross,Northern,Outbound,NB,NB
+940GZZLUEMB,940GZZLUWLO,Embankment,Waterloo,Northern,Inbound,SB,SB
+940GZZLUEMB,940GZZLUWSM,Embankment,Westminster,District,Inbound,WB,WB
+940GZZLUEMB,940GZZLUTMP,Embankment,Temple,District,Outbound,EB,EB
+940GZZLUEMB,940GZZLUWSM,Embankment,Westminster,Circle,Outbound,OR,WB
+940GZZLUEMB,940GZZLUTMP,Embankment,Temple,Circle,Inbound,IR,EB
+940GZZLUEPG,940GZZLUTHB,Epping,Theydon Bois,Central,Inbound,WB,WB
+940GZZLUEUS,940GZZLUKSX,Euston,King's Cross St Pancras,Victoria,Outbound,NB,NB
+940GZZLUEUS,940GZZLUWRR,Euston,Warren Street,Victoria,Inbound,SB,SB
+940GZZLUEUS,940GZZLUCTN,Euston,Camden Town,Northern,Outbound,NB,NB
+940GZZLUEUS,940GZZLUMTC,Euston,Mornington Crescent,Northern,Outbound,NB,NB
+940GZZLUEUS,940GZZLUWRR,Euston,Warren Street,Northern,Inbound,SB,SB
+940GZZLUEUS,940GZZLUKSX,Euston,King's Cross St Pancras,Northern,Inbound,SB,SB
+940GZZLUESQ,940GZZLUKSX,Euston Square,King's Cross St Pancras,Metropolitan,Outbound,SB,EB
+940GZZLUESQ,940GZZLUGPS,Euston Square,Great Portland Street,Metropolitan,Inbound,NB,WB
+940GZZLUESQ,940GZZLUKSX,Euston Square,King's Cross St Pancras,Hammersmith & City,Outbound,EB,EB
+940GZZLUESQ,940GZZLUGPS,Euston Square,Great Portland Street,Hammersmith & City,Inbound,WB,WB
+940GZZLUESQ,940GZZLUKSX,Euston Square,King's Cross St Pancras,Circle,Outbound,OR,EB
+940GZZLUESQ,940GZZLUGPS,Euston Square,Great Portland Street,Circle,Inbound,IR,WB
+940GZZLUFLP,940GZZLUBKE,Fairlop,Barkingside,Central,Inbound,WB,WB
+940GZZLUFLP,940GZZLUHLT,Fairlop,Hainault,Central,Outbound,EB,EB
+940GZZLUFCN,940GZZLUBBN,Farringdon,Barbican,Metropolitan,Outbound,SB,EB
+940GZZLUFCN,940GZZLUKSX,Farringdon,King's Cross St Pancras,Metropolitan,Inbound,NB,WB
+940GZZLUFCN,940GZZLUBBN,Farringdon,Barbican,Hammersmith & City,Outbound,EB,EB
+940GZZLUFCN,940GZZLUKSX,Farringdon,King's Cross St Pancras,Hammersmith & City,Inbound,WB,WB
+940GZZLUFCN,940GZZLUBBN,Farringdon,Barbican,Circle,Outbound,OR,EB
+940GZZLUFCN,940GZZLUKSX,Farringdon,King's Cross St Pancras,Circle,Inbound,IR,WB
+940GZZLUFYC,940GZZLUWFN,Finchley Central,West Finchley,Northern,Outbound,NB,NB
+940GZZLUFYC,940GZZLUMHL,Finchley Central,Mill Hill East,Northern,Outbound,NB,NB
+940GZZLUFYC,940GZZLUEFY,Finchley Central,East Finchley,Northern,Inbound,SB,SB
+940GZZLUFYR,940GZZLUSWC,Finchley Road,Swiss Cottage,Jubilee,Outbound,EB,SB
+940GZZLUFYR,940GZZLUWHP,Finchley Road,West Hampstead,Jubilee,Inbound,WB,NB
+940GZZLUFYR,940GZZLUBST,Finchley Road,Baker Street,Metropolitan,Outbound,SB,SB
+940GZZLUFYR,940GZZLUWYP,Finchley Road,Wembley Park,Metropolitan,Inbound,NB,NB
+940GZZLUFPK,940GZZLUSVS,Finsbury Park,Seven Sisters,Victoria,Outbound,NB,NB
+940GZZLUFPK,940GZZLUHAI,Finsbury Park,Highbury And Islington,Victoria,Inbound,SB,SB
+940GZZLUFPK,940GZZLUASL,Finsbury Park,Arsenal,Piccadilly,Inbound,WB,SB
+940GZZLUFPK,940GZZLUMRH,Finsbury Park,Manor House,Piccadilly,Outbound,EB,NB
+940GZZLUFBY,940GZZLUPSG,Fulham Broadway,Parsons Green,District,Inbound,WB,WB
+940GZZLUFBY,940GZZLUWBN,Fulham Broadway,West Brompton,District,Outbound,EB,EB
+940GZZLUGTH,940GZZLURBG,Gants Hill,Redbridge,Central,Inbound,WB,WB
+940GZZLUGTH,940GZZLUNBP,Gants Hill,Newbury Park,Central,Outbound,EB,EB
+940GZZLUGTR,940GZZLUECT,Gloucester Road,Earl's Court,Piccadilly,Inbound,WB,WB
+940GZZLUGTR,940GZZLUSKS,Gloucester Road,South Kensington,Piccadilly,Outbound,EB,EB
+940GZZLUGTR,940GZZLUECT,Gloucester Road,Earl's Court,District,Inbound,WB,WB
+940GZZLUGTR,940GZZLUSKS,Gloucester Road,South Kensington,District,Outbound,EB,EB
+940GZZLUGTR,940GZZLUHSK,Gloucester Road,High Street Kensington,Circle,Outbound,OR,WB
+940GZZLUGTR,940GZZLUSKS,Gloucester Road,South Kensington,Circle,Inbound,IR,EB
+940GZZLUGGN,940GZZLUBTX,Golders Green,Brent Cross,Northern,Outbound,NB,NB
+940GZZLUGGN,940GZZLUHTD,Golders Green,Hampstead,Northern,Inbound,SB,SB
+940GZZLUGHK,940GZZLUSBM,Goldhawk Road,Shepherd's Bush Market,Hammersmith & City,Outbound,EB,EB
+940GZZLUGHK,940GZZLUHSC,Goldhawk Road,Hammersmith,Hammersmith & City,Inbound,WB,WB
+940GZZLUGHK,940GZZLUSBM,Goldhawk Road,Shepherd's Bush Market,Circle,Outbound,EB,EB
+940GZZLUGHK,940GZZLUHSC,Goldhawk Road,Hammersmith,Circle,Inbound,WB,WB
+940GZZLUGDG,940GZZLUWRR,Goodge Street,Warren Street,Northern,Outbound,NB,NB
+940GZZLUGDG,940GZZLUTCR,Goodge Street,Tottenham Court Road,Northern,Inbound,SB,SB
+940GZZLUGGH,940GZZLUHLT,Grange Hill,Hainault,Central,Inbound,WB,WB
+940GZZLUGGH,940GZZLUCWL,Grange Hill,Chigwell,Central,Outbound,EB,EB
+940GZZLUGPS,940GZZLUESQ,Great Portland Street,Euston Square,Metropolitan,Outbound,SB,EB
+940GZZLUGPS,940GZZLUBST,Great Portland Street,Baker Street,Metropolitan,Inbound,NB,WB
+940GZZLUGPS,940GZZLUESQ,Great Portland Street,Euston Square,Hammersmith & City,Outbound,EB,EB
+940GZZLUGPS,940GZZLUBST,Great Portland Street,Baker Street,Hammersmith & City,Inbound,WB,WB
+940GZZLUGPS,940GZZLUESQ,Great Portland Street,Euston Square,Circle,Outbound,OR,EB
+940GZZLUGPS,940GZZLUBST,Great Portland Street,Baker Street,Circle,Inbound,IR,WB
+940GZZLUGPK,940GZZLUOXC,Green Park,Oxford Circus,Victoria,Outbound,NB,NB
+940GZZLUGPK,940GZZLUVIC,Green Park,Victoria,Victoria,Inbound,SB,SB
+940GZZLUGPK,940GZZLUWSM,Green Park,Westminster,Jubilee,Outbound,EB,SB
+940GZZLUGPK,940GZZLUBND,Green Park,Bond Street,Jubilee,Inbound,WB,NB
+940GZZLUGPK,940GZZLUHPC,Green Park,Hyde Park Corner,Piccadilly,Inbound,WB,WB
+940GZZLUGPK,940GZZLUPCC,Green Park,Piccadilly Circus,Piccadilly,Outbound,EB,EB
+940GZZLUGFD,940GZZLUNHT,Greenford,Northolt,Central,Inbound,WB,WB
+940GZZLUGFD,940GZZLUPVL,Greenford,Perivale,Central,Outbound,EB,EB
+940GZZLUGBY,940GZZLUKWG,Gunnersbury,Kew Gardens,District,Inbound,WB,WB
+940GZZLUGBY,940GZZLUTNG,Gunnersbury,Turnham Green,District,Outbound,EB,EB
+940GZZLUHLT,940GZZLUFLP,Hainault,Fairlop,Central,Inbound,WB,WB
+940GZZLUHLT,940GZZLUGGH,Hainault,Grange Hill,Central,Outbound,EB,EB
+940GZZLUHSD,940GZZLURVP,Hammersmith,Turnham Green,Piccadilly,Inbound,WB,WB
+940GZZLUHSD,940GZZLUBSC,Hammersmith,Barons Court,Piccadilly,Outbound,EB,EB
+940GZZLUHSD,940GZZLURVP,Hammersmith,Ravenscourt Park,District,Inbound,WB,WB
+940GZZLUHSD,940GZZLUBSC,Hammersmith,Barons Court,District,Outbound,EB,EB
+940GZZLUHSC,940GZZLUGHK,Hammersmith,Goldhawk Road,Hammersmith & City,Outbound,EB,EB
+940GZZLUHSC,940GZZLUGHK,Hammersmith,Goldhawk Road,Circle,Outbound,EB,EB
+940GZZLUHTD,940GZZLUGGN,Hampstead,Golders Green,Northern,Outbound,NB,NB
+940GZZLUHTD,940GZZLUBZP,Hampstead,Belsize Park,Northern,Inbound,SB,SB
+940GZZLUHGR,940GZZLUPVL,Hanger Lane,Perivale,Central,Inbound,WB,WB
+940GZZLUHGR,940GZZLUNAN,Hanger Lane,North Acton,Central,Outbound,EB,EB
+940GZZLUHSN,940GZZLUWJN,Harlesden,Willesden Junction,Bakerloo,Inbound,SB,SB
+940GZZLUHSN,940GZZLUSGP,Harlesden,Stonebridge Park,Bakerloo,Outbound,NB,NB
+940GZZLUHAW,940GZZLUKEN,Harrow & Wealdstone,Kenton,Bakerloo,Inbound,SB,SB
+940GZZLUHOH,940GZZLUNKP,Harrow-On-The-Hill,Northwick Park,Metropolitan,Outbound,SB,SB
+940GZZLUHOH,940GZZLUWHW,Harrow-On-The-Hill,West Harrow,Metropolitan,Inbound,NB,NB
+940GZZLUHOH,940GZZLUNHA,Harrow-On-The-Hill,North Harrow,Metropolitan,Inbound,NB,NB
+940GZZLUHNX,940GZZLUHR4,Hatton Cross,Heathrow Terminal 4,Piccadilly,Inbound,WB,WB
+940GZZLUHNX,940GZZLUHRC,Hatton Cross,"""Heathrow Terminals 1,2,3""",Piccadilly,Inbound,WB,WB
+940GZZLUHNX,940GZZLUHWT,Hatton Cross,Hounslow West,Piccadilly,Outbound,EB,EB
+940GZZLUHR4,940GZZLUHRC,Heathrow Terminal 4,"""Heathrow Terminals 1,2,3""",Piccadilly,Outbound,EB,EB
+940GZZLUHR5,940GZZLUHRC,Heathrow Terminal 5,"""Heathrow Terminals 1,2,3""",Piccadilly,Outbound,EB,EB
+940GZZLUHCL,940GZZLUCND,Hendon Central,Colindale,Northern,Outbound,NB,NB
+940GZZLUHCL,940GZZLUBTX,Hendon Central,Brent Cross,Northern,Inbound,SB,SB
+940GZZLUHBT,940GZZLUTAW,High Barnet,Totteridge & Whetstone,Northern,Inbound,SB,SB
+940GZZLUHSK,940GZZLUNHG,High Street Kensington,Notting Hill Gate,District,Outbound,EB,EB
+940GZZLUHSK,940GZZLUECT,High Street Kensington,Earl's Court,District,Inbound,WB,WB
+940GZZLUHSK,940GZZLUNHG,High Street Kensington,Notting Hill Gate,Circle,Outbound,OR,WB
+940GZZLUHSK,940GZZLUGTR,High Street Kensington,Gloucester Road,Circle,Inbound,IR,EB
+940GZZLUHAI,940GZZLUFPK,Highbury And Islington,Finsbury Park,Victoria,Outbound,NB,NB
+940GZZLUHAI,940GZZLUKSX,Highbury And Islington,King's Cross St Pancras,Victoria,Inbound,SB,SB
+940GZZLUHGT,940GZZLUEFY,Highgate,East Finchley,Northern,Outbound,NB,NB
+940GZZLUHGT,940GZZLUACY,Highgate,Archway,Northern,Inbound,SB,SB
+940GZZLUHGD,940GZZLUUXB,Hillingdon,Uxbridge,Piccadilly,Inbound,WB,WB
+940GZZLUHGD,940GZZLUICK,Hillingdon,Ickenham,Piccadilly,Outbound,EB,EB
+940GZZLUHGD,940GZZLUICK,Hillingdon,Ickenham,Metropolitan,Outbound,SB,EB
+940GZZLUHGD,940GZZLUUXB,Hillingdon,Uxbridge,Metropolitan,Inbound,NB,WB
+940GZZLUHBN,940GZZLUTCR,Holborn,Tottenham Court Road,Central,Inbound,WB,WB
+940GZZLUHBN,940GZZLUCHL,Holborn,Chancery Lane,Central,Outbound,EB,EB
+940GZZLUHBN,940GZZLUCGN,Holborn,Covent Garden,Piccadilly,Inbound,WB,WB
+940GZZLUHBN,940GZZLURSQ,Holborn,Russell Square,Piccadilly,Outbound,EB,EB
+940GZZLUHPK,940GZZLUSBC,Holland Park,Shepherd's Bush,Central,Inbound,WB,WB
+940GZZLUHPK,940GZZLUNHG,Holland Park,Notting Hill Gate,Central,Outbound,EB,EB
+940GZZLUHWY,940GZZLUCAR,Holloway Road,Caledonian Road,Piccadilly,Inbound,WB,WB
+940GZZLUHWY,940GZZLUASL,Holloway Road,Arsenal,Piccadilly,Outbound,EB,EB
+940GZZLUHCH,940GZZLUEPK,Hornchurch,Elm Park,District,Inbound,WB,WB
+940GZZLUHCH,940GZZLUUPB,Hornchurch,Upminster Bridge,District,Outbound,EB,EB
+940GZZLUHWC,940GZZLUHWT,Hounslow Central,Hounslow West,Piccadilly,Inbound,WB,WB
+940GZZLUHWC,940GZZLUHWE,Hounslow Central,Hounslow East,Piccadilly,Outbound,EB,EB
+940GZZLUHWE,940GZZLUHWC,Hounslow East,Hounslow Central,Piccadilly,Inbound,WB,WB
+940GZZLUHWE,940GZZLUOSY,Hounslow East,Osterley,Piccadilly,Outbound,EB,EB
+940GZZLUHWT,940GZZLUHNX,Hounslow West,Hatton Cross,Piccadilly,Inbound,WB,WB
+940GZZLUHWT,940GZZLUHWC,Hounslow West,Hounslow Central,Piccadilly,Outbound,EB,EB
+940GZZLUHPC,940GZZLUKNB,Hyde Park Corner,Knightsbridge,Piccadilly,Inbound,WB,WB
+940GZZLUHPC,940GZZLUGPK,Hyde Park Corner,Green Park,Piccadilly,Outbound,EB,EB
+940GZZLUICK,940GZZLUHGD,Ickenham,Hillingdon,Piccadilly,Inbound,WB,WB
+940GZZLUICK,940GZZLURSP,Ickenham,Ruislip,Piccadilly,Outbound,EB,EB
+940GZZLUICK,940GZZLURSP,Ickenham,Ruislip,Metropolitan,Outbound,SB,EB
+940GZZLUICK,940GZZLUHGD,Ickenham,Hillingdon,Metropolitan,Inbound,NB,WB
+940GZZLUKNG,940GZZLUEAC,Kennington,Elephant & Castle,Northern,Outbound,NB,NB
+940GZZLUKNG,940GZZLUWLO,Kennington,Waterloo,Northern,Outbound,NB,NB
+940GZZLUKNG,940GZZLUOVL,Kennington,Oval,Northern,Inbound,SB,SB
+940GZZLUKSL,940GZZLUQPS,Kensal Green,Queens Park,Bakerloo,Inbound,SB,SB
+940GZZLUKSL,940GZZLUWJN,Kensal Green,Willesden Junction,Bakerloo,Outbound,NB,NB
+940GZZLUKSH,940GZZLUTFP,Kentish Town,Tufnell Park,Northern,Outbound,NB,NB
+940GZZLUKSH,940GZZLUCTN,Kentish Town,Camden Town,Northern,Inbound,SB,SB
+940GZZLUKEN,940GZZLUSKT,Kenton,South Kenton,Bakerloo,Inbound,SB,SB
+940GZZLUKEN,940GZZLUHAW,Kenton,Harrow & Wealdstone,Bakerloo,Outbound,NB,NB
+940GZZLUKWG,940GZZLURMD,Kew Gardens,Richmond,District,Inbound,WB,WB
+940GZZLUKWG,940GZZLUGBY,Kew Gardens,Gunnersbury,District,Outbound,EB,EB
+940GZZLUKBN,940GZZLUWHP,Kilburn,West Hampstead,Jubilee,Outbound,EB,SB
+940GZZLUKBN,940GZZLUWIG,Kilburn,Willesden Green,Jubilee,Inbound,WB,NB
+940GZZLUKPK,940GZZLUMVL,Kilburn Park,Maida Vale,Bakerloo,Inbound,SB,SB
+940GZZLUKPK,940GZZLUQPS,Kilburn Park,Queens Park,Bakerloo,Outbound,NB,NB
+940GZZLUKSX,940GZZLUHAI,King's Cross St Pancras,Highbury And Islington,Victoria,Outbound,NB,NB
+940GZZLUKSX,940GZZLUEUS,King's Cross St Pancras,Euston,Victoria,Inbound,SB,SB
+940GZZLUKSX,940GZZLUEUS,King's Cross St Pancras,Euston,Northern,Outbound,NB,NB
+940GZZLUKSX,940GZZLUAGL,King's Cross St Pancras,Angel,Northern,Inbound,SB,SB
+940GZZLUKSX,940GZZLURSQ,King's Cross St Pancras,Russell Square,Piccadilly,Inbound,WB,WB
+940GZZLUKSX,940GZZLUCAR,King's Cross St Pancras,Caledonian Road,Piccadilly,Outbound,EB,EB
+940GZZLUKSX,940GZZLUFCN,King's Cross St Pancras,Farringdon,Metropolitan,Outbound,SB,EB
+940GZZLUKSX,940GZZLUESQ,King's Cross St Pancras,Euston Square,Metropolitan,Inbound,NB,WB
+940GZZLUKSX,940GZZLUFCN,King's Cross St Pancras,Farringdon,Hammersmith & City,Outbound,EB,EB
+940GZZLUKSX,940GZZLUESQ,King's Cross St Pancras,Euston Square,Hammersmith & City,Inbound,WB,WB
+940GZZLUKSX,940GZZLUFCN,King's Cross St Pancras,Farringdon,Circle,Outbound,OR,EB
+940GZZLUKSX,940GZZLUESQ,King's Cross St Pancras,Euston Square,Circle,Inbound,IR,WB
+940GZZLUKBY,940GZZLUWYP,Kingsbury,Wembley Park,Jubilee,Outbound,EB,SB
+940GZZLUKBY,940GZZLUQBY,Kingsbury,Queensbury,Jubilee,Inbound,WB,NB
+940GZZLUKNB,940GZZLUSKS,Knightsbridge,South Kensington,Piccadilly,Inbound,WB,WB
+940GZZLUKNB,940GZZLUHPC,Knightsbridge,Hyde Park Corner,Piccadilly,Outbound,EB,EB
+940GZZLULAD,940GZZLUWSP,Ladbroke Grove,Westbourne Park,Hammersmith & City,Outbound,EB,EB
+940GZZLULAD,940GZZLULRD,Ladbroke Grove,Latimer Road,Hammersmith & City,Inbound,WB,WB
+940GZZLULAD,940GZZLUWSP,Ladbroke Grove,Westbourne Park,Circle,Outbound,Eb,EB
+940GZZLULAD,940GZZLULRD,Ladbroke Grove,Latimer Road,Circle,Inbound,WB,WB
+940GZZLULBN,940GZZLUEAC,Lambeth North,Elephant & Castle,Bakerloo,Outbound,SB,SB
+940GZZLULBN,940GZZLUWLO,Lambeth North,Waterloo,Bakerloo,Outbound,NB,NB
+940GZZLULGT,940GZZLUQWY,Lancaster Gate,Queensway,Central,Inbound,WB,WB
+940GZZLULGT,940GZZLUMBA,Lancaster Gate,Marble Arch,Central,Outbound,EB,EB
+940GZZLULRD,940GZZLULAD,Latimer Road,Ladbroke Grove,Hammersmith & City,Outbound,EB,EB
+940GZZLULRD,940GZZLUWLA,Latimer Road,Wood Lane,Hammersmith & City,Inbound,WB,WB
+940GZZLULRD,940GZZLULAD,Latimer Road,Ladbroke Grove,Circle,Outbound,EB,EB
+940GZZLULRD,940GZZLUWLA,Latimer Road,Wood Lane,Circle,Inbound,WB,WB
+940GZZLULSQ,940GZZLUTCR,Leicester Square,Tottenham Court Road,Northern,Outbound,NB,NB
+940GZZLULSQ,940GZZLUCHX,Leicester Square,Charing Cross,Northern,Inbound,SB,SB
+940GZZLULSQ,940GZZLUPCC,Leicester Square,Piccadilly Circus,Piccadilly,Inbound,WB,WB
+940GZZLULSQ,940GZZLUCGN,Leicester Square,Covent Garden,Piccadilly,Outbound,EB,EB
+940GZZLULYN,940GZZLUSTD,Leyton,Stratford,Central,Inbound,WB,WB
+940GZZLULYN,940GZZLULYS,Leyton,Leytonstone,Central,Outbound,EB,EB
+940GZZLULYS,940GZZLULYN,Leytonstone,Leyton,Central,Inbound,WB,WB
+940GZZLULYS,940GZZLUWSD,Leytonstone,Wanstead,Central,Outbound,EB,EB
+940GZZLULYS,940GZZLUSNB,Leytonstone,Snaresbrook,Central,Outbound,EB,EB
+940GZZLULVT,940GZZLUBNK,Liverpool Street,Bank,Central,Inbound,WB,WB
+940GZZLULVT,940GZZLUBLG,Liverpool Street,Bethnal Green,Central,Outbound,EB,EB
+940GZZLULVT,940GZZLUALD,Liverpool Street,Aldgate,Metropolitan,Outbound,SB,EB
+940GZZLULVT,940GZZLUMGT,Liverpool Street,Moorgate,Metropolitan,Inbound,NB,WB
+940GZZLULVT,940GZZLUADE,Liverpool Street,Aldgate East,Hammersmith & City,Outbound,EB,EB
+940GZZLULVT,940GZZLUMGT,Liverpool Street,Moorgate,Hammersmith & City,Inbound,WB,WB
+940GZZLULVT,940GZZLUALD,Liverpool Street,Aldgate,Circle,Outbound,OR,EB
+940GZZLULVT,940GZZLUMGT,Liverpool Street,Moorgate,Circle,Inbound,IR,WB
+940GZZLULNB,940GZZLUBMY,London Bridge,Bermondsey,Jubilee,Outbound,EB,EB
+940GZZLULNB,940GZZLUSWK,London Bridge,Southwark,Jubilee,Inbound,WB,WB
+940GZZLULNB,940GZZLUBNK,London Bridge,Bank,Northern,Outbound,NB,NB
+940GZZLULNB,940GZZLUBOR,London Bridge,Borough,Northern,Inbound,SB,SB
+940GZZLULGN,940GZZLUBKH,Loughton,Buckhurst Hill,Central,Inbound,WB,WB
+940GZZLULGN,940GZZLUDBN,Loughton,Debden,Central,Outbound,EB,EB
+940GZZLUMVL,940GZZLUWKA,Maida Vale,Warwick Avenue,Bakerloo,Inbound,SB,SB
+940GZZLUMVL,940GZZLUKPK,Maida Vale,Kilburn Park,Bakerloo,Outbound,NB,NB
+940GZZLUMRH,940GZZLUFPK,Manor House,Finsbury Park,Piccadilly,Inbound,WB,WB
+940GZZLUMRH,940GZZLUTPN,Manor House,Turnpike Lane,Piccadilly,Outbound,EB,EB
+940GZZLUMSH,940GZZLUBKF,Mansion House,Blackfriars,District,Inbound,WB,WB
+940GZZLUMSH,940GZZLUCST,Mansion House,Cannon Street,District,Outbound,EB,EB
+940GZZLUMSH,940GZZLUBKF,Mansion House,Blackfriars,Circle,Outbound,OR,WB
+940GZZLUMSH,940GZZLUCST,Mansion House,Cannon Street,Circle,Inbound,IR,EB
+940GZZLUMBA,940GZZLULGT,Marble Arch,Lancaster Gate,Central,Inbound,WB,WB
+940GZZLUMBA,940GZZLUBND,Marble Arch,Bond Street,Central,Outbound,EB,EB
+940GZZLUMYB,940GZZLUBST,Marylebone,Baker Street,Bakerloo,Inbound,SB,SB
+940GZZLUMYB,940GZZLUERB,Marylebone,Edgware Road,Bakerloo,Outbound,NB,NB
+940GZZLUMED,940GZZLUBLG,Mile End,Bethnal Green,Central,Inbound,WB,WB
+940GZZLUMED,940GZZLUSTD,Mile End,Stratford,Central,Outbound,EB,EB
+940GZZLUMED,940GZZLUSGN,Mile End,Stepney Green,District,Inbound,WB,WB
+940GZZLUMED,940GZZLUBWR,Mile End,Bow Road,District,Outbound,EB,EB
+940GZZLUMED,940GZZLUBWR,Mile End,Bow Road,Hammersmith & City,Outbound,EB,EB
+940GZZLUMED,940GZZLUSGN,Mile End,Stepney Green,Hammersmith & City,Inbound,WB,WB
+940GZZLUMHL,940GZZLUFYC,Mill Hill East,Finchley Central,Northern,Inbound,SB,SB
+940GZZLUMMT,940GZZLUCST,Monument,Cannon Street,District,Inbound,WB,WB
+940GZZLUMMT,940GZZLUTWH,Monument,Tower Hill,District,Outbound,EB,EB
+940GZZLUMMT,940GZZLUCST,Monument,Cannon Street,Circle,Outbound,OR,WB
+940GZZLUMMT,940GZZLUTWH,Monument,Tower Hill,Circle,Inbound,IR,EB
+940GZZLUMPK,940GZZLUNOW,Moor Park,Northwood,Metropolitan,Outbound,SB,SB
+940GZZLUMPK,940GZZLUCXY,Moor Park,Croxley,Metropolitan,Inbound,NB,NB
+940GZZLUMPK,940GZZLURKW,Moor Park,Rickmansworth,Metropolitan,Inbound,NB,NB
+940GZZLUMGT,940GZZLUODS,Moorgate,Old Street,Northern,Outbound,NB,NB
+940GZZLUMGT,940GZZLUBNK,Moorgate,Bank,Northern,Inbound,SB,SB
+940GZZLUMGT,940GZZLULVT,Moorgate,Liverpool Street,Metropolitan,Outbound,SB,EB
+940GZZLUMGT,940GZZLUBBN,Moorgate,Barbican,Metropolitan,Inbound,NB,WB
+940GZZLUMGT,940GZZLULVT,Moorgate,Liverpool Street,Hammersmith & City,Outbound,EB,EB
+940GZZLUMGT,940GZZLUBBN,Moorgate,Barbican,Hammersmith & City,Inbound,WB,WB
+940GZZLUMGT,940GZZLULVT,Moorgate,Liverpool Street,Circle,Outbound,OR,EB
+940GZZLUMGT,940GZZLUBBN,Moorgate,Barbican,Circle,Inbound,IR,WB
+940GZZLUMDN,940GZZLUSWN,Morden,South Wimbledon,Northern,Outbound,NB,NB
+940GZZLUMTC,940GZZLUCTN,Mornington Crescent,Camden Town,Northern,Outbound,NB,NB
+940GZZLUMTC,940GZZLUEUS,Mornington Crescent,Euston,Northern,Inbound,SB,SB
+940GZZLUNDN,940GZZLUDOH,Neasden,Dollis Hill,Jubilee,Outbound,EB,SB
+940GZZLUNDN,940GZZLUWYP,Neasden,Wembley Park,Jubilee,Inbound,WB,NB
+940GZZLUNBP,940GZZLUGTH,Newbury Park,Gants Hill,Central,Inbound,WB,WB
+940GZZLUNBP,940GZZLUBKE,Newbury Park,Barkingside,Central,Outbound,EB,EB
+940GZZLUNAN,940GZZLUHGR,North Acton,Hanger Lane,Central,Inbound,WB,WB
+940GZZLUNAN,940GZZLUWTA,North Acton,West Acton,Central,Inbound,WB,WB
+940GZZLUNAN,940GZZLUEAN,North Acton,East Acton,Central,Outbound,EB,EB
+940GZZLUNEN,940GZZLUPKR,North Ealing,Park Royal,Piccadilly,Inbound,WB,WB
+940GZZLUNEN,940GZZLUECM,North Ealing,Ealing Common,Piccadilly,Outbound,EB,EB
+940GZZLUNGW,940GZZLUCGT,North Greenwich,Canning Town,Jubilee,Outbound,EB,EB
+940GZZLUNGW,940GZZLUCYF,North Greenwich,Canary Wharf,Jubilee,Inbound,WB,WB
+940GZZLUNHA,940GZZLUHOH,North Harrow,Harrow-On-The-Hill,Metropolitan,Outbound,SB,SB
+940GZZLUNHA,940GZZLUPNR,North Harrow,Pinner,Metropolitan,Inbound,NB,NB
+940GZZLUNWY,940GZZLUWYC,North Wembley,Wembley Central,Bakerloo,Inbound,SB,SB
+940GZZLUNWY,940GZZLUSKT,North Wembley,South Kenton,Bakerloo,Outbound,NB,NB
+940GZZLUNFD,940GZZLUBOS,Northfields,Boston Manor,Piccadilly,Inbound,WB,WB
+940GZZLUNFD,940GZZLUSEA,Northfields,South Ealing,Piccadilly,Outbound,EB,EB
+940GZZLUNHT,940GZZLUSRP,Northolt,South Ruislip,Central,Inbound,WB,WB
+940GZZLUNHT,940GZZLUGFD,Northolt,Greenford,Central,Outbound,EB,EB
+940GZZLUNKP,940GZZLUPRD,Northwick Park,Preston Road,Metropolitan,Outbound,SB,SB
+940GZZLUNKP,940GZZLUHOH,Northwick Park,Harrow-On-The-Hill,Metropolitan,Inbound,NB,NB
+940GZZLUNOW,940GZZLUNWH,Northwood,Northwood Hills,Metropolitan,Outbound,SB,SB
+940GZZLUNOW,940GZZLUMPK,Northwood,Moor Park,Metropolitan,Inbound,NB,NB
+940GZZLUNWH,940GZZLUPNR,Northwood Hills,Pinner,Metropolitan,Outbound,SB,SB
+940GZZLUNWH,940GZZLUNOW,Northwood Hills,Northwood,Metropolitan,Inbound,NB,NB
+940GZZLUNHG,940GZZLUHPK,Notting Hill Gate,Holland Park,Central,Inbound,WB,WB
+940GZZLUNHG,940GZZLUQWY,Notting Hill Gate,Queensway,Central,Outbound,EB,EB
+940GZZLUNHG,940GZZLUBWT,Notting Hill Gate,Bayswater,District,Outbound,EB,EB
+940GZZLUNHG,940GZZLUHSK,Notting Hill Gate,High Street Kensington,District,Inbound,WB,WB
+940GZZLUNHG,940GZZLUBWT,Notting Hill Gate,Bayswater,Circle,Outbound,OR,WB
+940GZZLUNHG,940GZZLUHSK,Notting Hill Gate,High Street Kensington,Circle,Inbound,IR,EB
+940GZZLUOAK,940GZZLUSGT,Oakwood,Southgate,Piccadilly,Inbound,WB,WB
+940GZZLUOAK,940GZZLUCKS,Oakwood,Cockfosters,Piccadilly,Outbound,EB,EB
+940GZZLUODS,940GZZLUAGL,Old Street,Angel,Northern,Outbound,NB,NB
+940GZZLUODS,940GZZLUMGT,Old Street,Moorgate,Northern,Inbound,SB,SB
+940GZZLUKOY,940GZZLUECT,Olympia,Earl's Court,District,Inbound,EB,EB
+940GZZLUOSY,940GZZLUHWE,Osterley,Hounslow East,Piccadilly,Inbound,WB,WB
+940GZZLUOSY,940GZZLUBOS,Osterley,Boston Manor,Piccadilly,Outbound,EB,EB
+940GZZLUOVL,940GZZLUKNG,Oval,Kennington,Northern,Outbound,NB,NB
+940GZZLUOVL,940GZZLUSKW,Oval,Stockwell,Northern,Inbound,SB,SB
+940GZZLUOXC,940GZZLUPCC,Oxford Circus,Piccadilly Circus,Bakerloo,Inbound,SB,SB
+940GZZLUOXC,940GZZLURGP,Oxford Circus,Regent's Park,Bakerloo,Outbound,NB,NB
+940GZZLUOXC,940GZZLUBND,Oxford Circus,Bond Street,Central,Inbound,WB,WB
+940GZZLUOXC,940GZZLUTCR,Oxford Circus,Tottenham Court Road,Central,Outbound,EB,EB
+940GZZLUOXC,940GZZLUWRR,Oxford Circus,Warren Street,Victoria,Outbound,NB,NB
+940GZZLUOXC,940GZZLUGPK,Oxford Circus,Green Park,Victoria,Inbound,SB,SB
+940GZZLUPAC,940GZZLUERB,Paddington,Edgware Road,Bakerloo,Inbound,SB,SB
+940GZZLUPAC,940GZZLUWKA,Paddington,Warwick Avenue,Bakerloo,Outbound,NB,NB
+940GZZLUPAC,940GZZLUERC,Paddington,Edgware Road,District,Outbound,EB,EB
+940GZZLUPAC,940GZZLUBWT,Paddington,Bayswater,District,Inbound,WB,WB
+940GZZLUPAH,940GZZLUERC,Paddington,Edgware Road,Hammersmith & City,Outbound,EB,EB
+940GZZLUPAH,940GZZLURYO,Paddington,Royal Oak,Hammersmith & City,Inbound,WB,WB
+940GZZLUPAH,940GZZLUERC,Paddington,Edgware Road,Circle,Outbound,EB,EB
+940GZZLUPAC,940GZZLUERC,Paddington,Edgware Road,Circle,Outbound,OR,EB
+940GZZLUPAC,940GZZLUBWT,Paddington,Bayswater,Circle,Inbound,IR,WB
+940GZZLUPAH,940GZZLURYO,Paddington,Royal Oak,Circle,Inbound,WB,WB
+940GZZLUPKR,940GZZLUALP,Park Royal,Alperton,Piccadilly,Inbound,WB,WB
+940GZZLUPKR,940GZZLUNEN,Park Royal,North Ealing,Piccadilly,Outbound,EB,EB
+940GZZLUPSG,940GZZLUPYB,Parsons Green,Putney Bridge,District,Inbound,WB,WB
+940GZZLUPSG,940GZZLUFBY,Parsons Green,Fulham Broadway,District,Outbound,EB,EB
+940GZZLUPVL,940GZZLUGFD,Perivale,Greenford,Central,Inbound,WB,WB
+940GZZLUPVL,940GZZLUHGR,Perivale,Hanger Lane,Central,Outbound,EB,EB
+940GZZLUPCC,940GZZLUCHX,Piccadilly Circus,Charing Cross,Bakerloo,Inbound,SB,SB
+940GZZLUPCC,940GZZLUOXC,Piccadilly Circus,Oxford Circus,Bakerloo,Outbound,NB,NB
+940GZZLUPCC,940GZZLUGPK,Piccadilly Circus,Green Park,Piccadilly,Inbound,WB,WB
+940GZZLUPCC,940GZZLULSQ,Piccadilly Circus,Leicester Square,Piccadilly,Outbound,EB,EB
+940GZZLUPCO,940GZZLUVIC,Pimlico,Victoria,Victoria,Outbound,NB,NB
+940GZZLUPCO,940GZZLUVXL,Pimlico,Vauxhall,Victoria,Inbound,SB,SB
+940GZZLUPNR,940GZZLUNHA,Pinner,North Harrow,Metropolitan,Outbound,SB,SB
+940GZZLUPNR,940GZZLUNWH,Pinner,Northwood Hills,Metropolitan,Inbound,NB,NB
+940GZZLUPLW,940GZZLUWHM,Plaistow,West Ham,District,Inbound,WB,WB
+940GZZLUPLW,940GZZLUUPK,Plaistow,Upton Park,District,Outbound,EB,EB
+940GZZLUPLW,940GZZLUUPK,Plaistow,Upton Park,Hammersmith & City,Outbound,EB,EB
+940GZZLUPLW,940GZZLUWHM,Plaistow,West Ham,Hammersmith & City,Inbound,WB,WB
+940GZZLUPRD,940GZZLUWYP,Preston Road,Wembley Park,Metropolitan,Outbound,SB,SB
+940GZZLUPRD,940GZZLUNKP,Preston Road,Northwick Park,Metropolitan,Inbound,NB,NB
+940GZZLUPYB,940GZZLUEPY,Putney Bridge,East Putney,District,Inbound,WB,WB
+940GZZLUPYB,940GZZLUPSG,Putney Bridge,Parsons Green,District,Outbound,EB,EB
+940GZZLUQPS,940GZZLUKPK,Queens Park,Kilburn Park,Bakerloo,Inbound,SB,SB
+940GZZLUQPS,940GZZLUKSL,Queens Park,Kensal Green,Bakerloo,Outbound,NB,NB
+940GZZLUQBY,940GZZLUKBY,Queensbury,Kingsbury,Jubilee,Outbound,EB,SB
+940GZZLUQBY,940GZZLUCPK,Queensbury,Canons Park,Jubilee,Inbound,WB,NB
+940GZZLUQWY,940GZZLUNHG,Queensway,Notting Hill Gate,Central,Inbound,WB,WB
+940GZZLUQWY,940GZZLULGT,Queensway,Lancaster Gate,Central,Outbound,EB,EB
+940GZZLURVP,940GZZLUSFB,Ravenscourt Park,Stamford Brook,District,Inbound,WB,WB
+940GZZLURVP,940GZZLUHSD,Ravenscourt Park,Hammersmith,District,Outbound,EB,EB
+940GZZLURYL,940GZZLUEAE,Rayners Lane,Eastcote,Piccadilly,Inbound,WB,WB
+940GZZLURYL,940GZZLUSHH,Rayners Lane,South Harrow,Piccadilly,Outbound,EB,EB
+940GZZLURYL,940GZZLUWHW,Rayners Lane,West Harrow,Metropolitan,Outbound,SB,EB
+940GZZLURYL,940GZZLUEAE,Rayners Lane,Eastcote,Metropolitan,Inbound,NB,WB
+940GZZLURBG,940GZZLUWSD,Redbridge,Wanstead,Central,Inbound,WB,WB
+940GZZLURBG,940GZZLUGTH,Redbridge,Gants Hill,Central,Outbound,EB,EB
+940GZZLURGP,940GZZLUOXC,Regent's Park,Oxford Circus,Bakerloo,Inbound,SB,SB
+940GZZLURGP,940GZZLUBST,Regent's Park,Baker Street,Bakerloo,Outbound,NB,NB
+940GZZLURMD,940GZZLUKWG,Richmond,Kew Gardens,District,Outbound,EB,EB
+940GZZLURKW,940GZZLUMPK,Rickmansworth,Moor Park,Metropolitan,Outbound,SB,SB
+940GZZLURKW,940GZZLUCYD,Rickmansworth,Chorleywood,Metropolitan,Inbound,NB,NB
+940GZZLURVY,940GZZLUCWL,Roding Valley,Chigwell,Central,Inbound,WB,WB
+940GZZLURVY,940GZZLUWOF,Roding Valley,Woodford,Central,Outbound,EB,EB
+940GZZLURYO,940GZZLUPAH,Royal Oak,Paddington,Hammersmith & City,Outbound,EB,EB
+940GZZLURYO,940GZZLUWSP,Royal Oak,Westbourne Park,Hammersmith & City,Inbound,WB,WB
+940GZZLURYO,940GZZLUPAH,Royal Oak,Paddington,Circle,Outbound,EB,EB
+940GZZLURYO,940GZZLUWSP,Royal Oak,Westbourne Park,Circle,Inbound,WB,WB
+940GZZLURSP,940GZZLUICK,Ruislip,Ickenham,Piccadilly,Inbound,WB,WB
+940GZZLURSP,940GZZLURSM,Ruislip,Ruislip Manor,Piccadilly,Outbound,EB,EB
+940GZZLURSP,940GZZLURSM,Ruislip,Ruislip Manor,Metropolitan,Outbound,SB,EB
+940GZZLURSP,940GZZLUICK,Ruislip,Ickenham,Metropolitan,Inbound,NB,WB
+940GZZLURSG,940GZZLUWRP,Ruislip Gardens,West Ruislip,Central,Inbound,WB,WB
+940GZZLURSG,940GZZLUSRP,Ruislip Gardens,South Ruislip,Central,Outbound,EB,EB
+940GZZLURSM,940GZZLURSP,Ruislip Manor,Ruislip,Piccadilly,Inbound,WB,WB
+940GZZLURSM,940GZZLUEAE,Ruislip Manor,Eastcote,Piccadilly,Outbound,EB,EB
+940GZZLURSM,940GZZLUEAE,Ruislip Manor,Eastcote,Metropolitan,Outbound,SB,EB
+940GZZLURSM,940GZZLURSP,Ruislip Manor,Ruislip,Metropolitan,Inbound,NB,WB
+940GZZLURSQ,940GZZLUHBN,Russell Square,Holborn,Piccadilly,Inbound,WB,WB
+940GZZLURSQ,940GZZLUKSX,Russell Square,King's Cross St Pancras,Piccadilly,Outbound,EB,EB
+940GZZLUSVS,940GZZLUTMH,Seven Sisters,Tottenham Hale,Victoria,Outbound,NB,NB
+940GZZLUSVS,940GZZLUFPK,Seven Sisters,Finsbury Park,Victoria,Inbound,SB,SB
+940GZZLUSBC,940GZZLUWCY,Shepherd's Bush,White City,Central,Inbound,WB,WB
+940GZZLUSBC,940GZZLUHPK,Shepherd's Bush,Holland Park,Central,Outbound,EB,EB
+940GZZLUSBM,940GZZLUWLA,Shepherd's Bush Market,Wood Lane,Hammersmith & City,Outbound,EB,EB
+940GZZLUSBM,940GZZLUGHK,Shepherd's Bush Market,Goldhawk Road,Hammersmith & City,Inbound,WB,WB
+940GZZLUSBM,940GZZLUWLA,Shepherd's Bush Market,Wood Lane,Circle,Outbound,EB,EB
+940GZZLUSBM,940GZZLUGHK,Shepherd's Bush Market,Goldhawk Road,Circle,Inbound,WB,WB
+940GZZLUSSQ,940GZZLUSKS,Sloane Square,South Kensington,District,Inbound,WB,WB
+940GZZLUSSQ,940GZZLUVIC,Sloane Square,Victoria,District,Outbound,EB,EB
+940GZZLUSSQ,940GZZLUSKS,Sloane Square,South Kensington,Circle,Outbound,OR,WB
+940GZZLUSSQ,940GZZLUVIC,Sloane Square,Victoria,Circle,Inbound,IR,EB
+940GZZLUSNB,940GZZLULYS,Snaresbrook,Leytonstone,Central,Inbound,WB,WB
+940GZZLUSNB,940GZZLUSWF,Snaresbrook,South Woodford,Central,Outbound,EB,EB
+940GZZLUSEA,940GZZLUNFD,South Ealing,Northfields,Piccadilly,Inbound,WB,WB
+940GZZLUSEA,940GZZLUACT,South Ealing,Acton Town,Piccadilly,Outbound,EB,EB
+940GZZLUSHH,940GZZLURYL,South Harrow,Rayners Lane,Piccadilly,Inbound,WB,WB
+940GZZLUSHH,940GZZLUSUH,South Harrow,Sudbury Hill,Piccadilly,Outbound,EB,EB
+940GZZLUSKS,940GZZLUGTR,South Kensington,Gloucester Road,Piccadilly,Inbound,WB,WB
+940GZZLUSKS,940GZZLUKNB,South Kensington,Knightsbridge,Piccadilly,Outbound,EB,EB
+940GZZLUSKS,940GZZLUGTR,South Kensington,Gloucester Road,District,Inbound,WB,WB
+940GZZLUSKS,940GZZLUSSQ,South Kensington,Sloane Square,District,Outbound,EB,EB
+940GZZLUSKS,940GZZLUGTR,South Kensington,Gloucester Road,Circle,Outbound,OR,WB
+940GZZLUSKS,940GZZLUSSQ,South Kensington,Sloane Square,Circle,Inbound,IR,EB
+940GZZLUSKT,940GZZLUNWY,South Kenton,North Wembley,Bakerloo,Inbound,SB,SB
+940GZZLUSKT,940GZZLUKEN,South Kenton,Kenton,Bakerloo,Outbound,NB,NB
+940GZZLUSRP,940GZZLURSG,South Ruislip,Ruislip Gardens,Central,Inbound,WB,WB
+940GZZLUSRP,940GZZLUNHT,South Ruislip,Northolt,Central,Outbound,EB,EB
+940GZZLUSWN,940GZZLUCSD,South Wimbledon,Colliers Wood,Northern,Outbound,NB,NB
+940GZZLUSWN,940GZZLUMDN,South Wimbledon,Morden,Northern,Inbound,SB,SB
+940GZZLUSWF,940GZZLUSNB,South Woodford,Snaresbrook,Central,Inbound,WB,WB
+940GZZLUSWF,940GZZLUWOF,South Woodford,Woodford,Central,Outbound,EB,EB
+940GZZLUSFS,940GZZLUWIP,Southfields,Wimbledon Park,District,Inbound,WB,WB
+940GZZLUSFS,940GZZLUEPY,Southfields,East Putney,District,Outbound,EB,EB
+940GZZLUSGT,940GZZLUASG,Southgate,Arnos Grove,Piccadilly,Inbound,WB,WB
+940GZZLUSGT,940GZZLUOAK,Southgate,Oakwood,Piccadilly,Outbound,EB,EB
+940GZZLUSWK,940GZZLULNB,Southwark,London Bridge,Jubilee,Outbound,EB,EB
+940GZZLUSWK,940GZZLUWLO,Southwark,Waterloo,Jubilee,Inbound,WB,WB
+940GZZLUSJP,940GZZLUVIC,St James's Park,Victoria,District,Inbound,WB,WB
+940GZZLUSJP,940GZZLUWSM,St James's Park,Westminster,District,Outbound,EB,EB
+940GZZLUSJP,940GZZLUVIC,St James's Park,Victoria,Circle,Outbound,OR,WB
+940GZZLUSJP,940GZZLUWSM,St James's Park,Westminster,Circle,Inbound,IR,WB
+940GZZLUSJW,940GZZLUBST,St John's Wood,Baker Street,Jubilee,Outbound,EB,SB
+940GZZLUSJW,940GZZLUSWC,St John's Wood,Swiss Cottage,Jubilee,Inbound,WB,NB
+940GZZLUSPU,940GZZLUCHL,St Paul's,Chancery Lane,Central,Inbound,WB,WB
+940GZZLUSPU,940GZZLUBNK,St Paul's,Bank,Central,Outbound,EB,EB
+940GZZLUSFB,940GZZLUTNG,Stamford Brook,Turnham Green,District,Inbound,WB,WB
+940GZZLUSFB,940GZZLURVP,Stamford Brook,Ravenscourt Park,District,Outbound,EB,EB
+940GZZLUSTM,940GZZLUCPK,Stanmore,Canons Park,Jubilee,Outbound,EB,SB
+940GZZLUSGN,940GZZLUWPL,Stepney Green,Whitechapel,District,Inbound,WB,WB
+940GZZLUSGN,940GZZLUMED,Stepney Green,Mile End,District,Outbound,EB,EB
+940GZZLUSGN,940GZZLUMED,Stepney Green,Mile End,Hammersmith & City,Outbound,EB,EB
+940GZZLUSGN,940GZZLUWPL,Stepney Green,Whitechapel,Hammersmith & City,Inbound,WB,WB
+940GZZLUSKW,940GZZLUVXL,Stockwell,Vauxhall,Victoria,Outbound,NB,NB
+940GZZLUSKW,940GZZLUBXN,Stockwell,Brixton,Victoria,Inbound,SB,SB
+940GZZLUSKW,940GZZLUOVL,Stockwell,Oval,Northern,Outbound,NB,NB
+940GZZLUSKW,940GZZLUCPN,Stockwell,Clapham North,Northern,Inbound,SB,SB
+940GZZLUSGP,940GZZLUHSN,Stonebridge Park,Harlesden,Bakerloo,Inbound,SB,SB
+940GZZLUSGP,940GZZLUWYC,Stonebridge Park,Wembley Central,Bakerloo,Outbound,NB,NB
+940GZZLUSTD,940GZZLUMED,Stratford,Mile End,Central,Inbound,WB,WB
+940GZZLUSTD,940GZZLULYN,Stratford,Leyton,Central,Outbound,EB,EB
+940GZZLUSTD,940GZZLUWHM,Stratford,West Ham,Jubilee,Inbound,WB,WB
+940GZZLUSUH,940GZZLUSHH,Sudbury Hill,South Harrow,Piccadilly,Inbound,WB,WB
+940GZZLUSUH,940GZZLUSUT,Sudbury Hill,Sudbury Town,Piccadilly,Outbound,EB,EB
+940GZZLUSUT,940GZZLUSUH,Sudbury Town,Sudbury Hill,Piccadilly,Inbound,WB,WB
+940GZZLUSUT,940GZZLUALP,Sudbury Town,Alperton,Piccadilly,Outbound,EB,EB
+940GZZLUSWC,940GZZLUSJW,Swiss Cottage,St John's Wood,Jubilee,Outbound,EB,SB
+940GZZLUSWC,940GZZLUFYR,Swiss Cottage,Finchley Road,Jubilee,Inbound,WB,NB
+940GZZLUTMP,940GZZLUEMB,Temple,Embankment,District,Inbound,WB,WB
+940GZZLUTMP,940GZZLUBKF,Temple,Blackfriars,District,Outbound,EB,EB
+940GZZLUTMP,940GZZLUEMB,Temple,Embankment,Circle,Outbound,OR,WB
+940GZZLUTMP,940GZZLUBKF,Temple,Blackfriars,Circle,Inbound,IR,EB
+940GZZLUTHB,940GZZLUDBN,Theydon Bois,Debden,Central,Inbound,WB,WB
+940GZZLUTHB,940GZZLUEPG,Theydon Bois,Epping,Central,Outbound,EB,EB
+940GZZLUTBC,940GZZLUBLM,Tooting Bec,Balham,Northern,Outbound,NB,NB
+940GZZLUTBC,940GZZLUTBY,Tooting Bec,Tooting Broadway,Northern,Inbound,SB,SB
+940GZZLUTBY,940GZZLUTBC,Tooting Broadway,Tooting Bec,Northern,Outbound,NB,NB
+940GZZLUTBY,940GZZLUCSD,Tooting Broadway,Colliers Wood,Northern,Inbound,SB,SB
+940GZZLUTCR,940GZZLUOXC,Tottenham Court Road,Oxford Circus,Central,Inbound,WB,WB
+940GZZLUTCR,940GZZLUHBN,Tottenham Court Road,Holborn,Central,Outbound,EB,EB
+940GZZLUTCR,940GZZLUGDG,Tottenham Court Road,Goodge Street,Northern,Outbound,NB,NB
+940GZZLUTCR,940GZZLULSQ,Tottenham Court Road,Leicester Square,Northern,Inbound,SB,SB
+940GZZLUTMH,940GZZLUBLR,Tottenham Hale,Blackhorse Road,Victoria,Outbound,NB,NB
+940GZZLUTMH,940GZZLUSVS,Tottenham Hale,Seven Sisters,Victoria,Inbound,SB,SB
+940GZZLUTAW,940GZZLUHBT,Totteridge & Whetstone,High Barnet,Northern,Outbound,NB,NB
+940GZZLUTAW,940GZZLUWOP,Totteridge & Whetstone,Woodside Park,Northern,Inbound,SB,SB
+940GZZLUTWH,940GZZLUMMT,Tower Hill,Monument,District,Inbound,WB,WB
+940GZZLUTWH,940GZZLUADE,Tower Hill,Aldgate East,District,Outbound,EB,EB
+940GZZLUTWH,940GZZLUMMT,Tower Hill,Monument,Circle,Outbound,OR,WB
+940GZZLUTWH,940GZZLUALD,Tower Hill,Aldgate,Circle,Inbound,IR,EB
+940GZZLUTFP,940GZZLUACY,Tufnell Park,Archway,Northern,Outbound,NB,NB
+940GZZLUTFP,940GZZLUKSH,Tufnell Park,Kentish Town,Northern,Inbound,SB,SB
+940GZZLUTNG,940GZZLUACT,Turnham Green,Acton Town,Piccadilly,Inbound,WB,
+940GZZLUTNG,940GZZLURVP,Turnham Green,Hammersmith,Piccadilly,Outbound,EB,EB
+940GZZLUTNG,940GZZLUGBY,Turnham Green,Gunnersbury,District,Inbound,WB,WB
+940GZZLUTNG,940GZZLUCWP,Turnham Green,Chiswick Park,District,Inbound,WB,WB
+940GZZLUTNG,940GZZLUSFB,Turnham Green,Stamford Brook,District,Outbound,EB,EB
+940GZZLUTPN,940GZZLUMRH,Turnpike Lane,Manor House,Piccadilly,Inbound,WB,WB
+940GZZLUTPN,940GZZLUWOG,Turnpike Lane,Wood Green,Piccadilly,Outbound,EB,EB
+940GZZLUUPM,940GZZLUUPB,Upminster,Upminster Bridge,District,Inbound,WB,WB
+940GZZLUUPB,940GZZLUHCH,Upminster Bridge,Hornchurch,District,Inbound,WB,WB
+940GZZLUUPB,940GZZLUUPM,Upminster Bridge,Upminster,District,Outbound,EB,EB
+940GZZLUUPY,940GZZLUBKG,Upney,Barking,District,Inbound,WB,WB
+940GZZLUUPY,940GZZLUBEC,Upney,Becontree,District,Outbound,EB,EB
+940GZZLUUPK,940GZZLUPLW,Upton Park,Plaistow,District,Inbound,WB,WB
+940GZZLUUPK,940GZZLUEHM,Upton Park,East Ham,District,Outbound,EB,EB
+940GZZLUUPK,940GZZLUEHM,Upton Park,East Ham,Hammersmith & City,Outbound,EB,EB
+940GZZLUUPK,940GZZLUPLW,Upton Park,Plaistow,Hammersmith & City,Inbound,WB,WB
+940GZZLUUXB,940GZZLUHGD,Uxbridge,Hillingdon,Piccadilly,Outbound,EB,EB
+940GZZLUUXB,940GZZLUHGD,Uxbridge,Hillingdon,Metropolitan,Outbound,SB,EB
+940GZZLUVXL,940GZZLUPCO,Vauxhall,Pimlico,Victoria,Outbound,NB,NB
+940GZZLUVXL,940GZZLUSKW,Vauxhall,Stockwell,Victoria,Inbound,SB,SB
+940GZZLUVIC,940GZZLUGPK,Victoria,Green Park,Victoria,Outbound,NB,NB
+940GZZLUVIC,940GZZLUPCO,Victoria,Pimlico,Victoria,Inbound,SB,SB
+940GZZLUVIC,940GZZLUSSQ,Victoria,Sloane Square,District,Inbound,WB,WB
+940GZZLUVIC,940GZZLUSJP,Victoria,St James's Park,District,Outbound,EB,EB
+940GZZLUVIC,940GZZLUSSQ,Victoria,Sloane Square,Circle,Outbound,OR,WB
+940GZZLUVIC,940GZZLUSJP,Victoria,St James's Park,Circle,Inbound,IR,EB
+940GZZLUWWL,940GZZLUBLR,Walthamstow Central,Blackhorse Road,Victoria,Inbound,SB,SB
+940GZZLUWSD,940GZZLULYS,Wanstead,Leytonstone,Central,Inbound,WB,WB
+940GZZLUWSD,940GZZLURBG,Wanstead,Redbridge,Central,Outbound,EB,EB
+940GZZLUWRR,940GZZLUEUS,Warren Street,Euston,Victoria,Outbound,NB,NB
+940GZZLUWRR,940GZZLUOXC,Warren Street,Oxford Circus,Victoria,Inbound,SB,SB
+940GZZLUWRR,940GZZLUEUS,Warren Street,Euston,Northern,Outbound,NB,NB
+940GZZLUWRR,940GZZLUGDG,Warren Street,Goodge Street,Northern,Inbound,SB,SB
+940GZZLUWKA,940GZZLUPAC,Warwick Avenue,Paddington,Bakerloo,Inbound,SB,SB
+940GZZLUWKA,940GZZLUMVL,Warwick Avenue,Maida Vale,Bakerloo,Outbound,NB,NB
+940GZZLUWLO,940GZZLULBN,Waterloo,Lambeth North,Bakerloo,Inbound,SB,SB
+940GZZLUWLO,940GZZLUEMB,Waterloo,Embankment,Bakerloo,Outbound,NB,NB
+940GZZLUWLO,940GZZLUSWK,Waterloo,Southwark,Jubilee,Outbound,EB,EB
+940GZZLUWLO,940GZZLUWSM,Waterloo,Westminster,Jubilee,Inbound,WB,WB
+940GZZLUWLO,940GZZLUEMB,Waterloo,Embankment,Northern,Outbound,NB,NB
+940GZZLUWLO,940GZZLUKNG,Waterloo,Kennington,Northern,Inbound,SB,SB
+940GZZLUWLO,940GZZLUBNK,Waterloo,Bank,Waterloo & City,Outbound,EB,EB
+940GZZLUWAF,940GZZLUCXY,Watford,Croxley,Metropolitan,Outbound,SB,SB
+940GZZLUWYC,940GZZLUSGP,Wembley Central,Stonebridge Park,Bakerloo,Inbound,SB,SB
+940GZZLUWYC,940GZZLUNWY,Wembley Central,North Wembley,Bakerloo,Outbound,NB,NB
+940GZZLUWYP,940GZZLUNDN,Wembley Park,Neasden,Jubilee,Outbound,EB,SB
+940GZZLUWYP,940GZZLUKBY,Wembley Park,Kingsbury,Jubilee,Inbound,WB,NB
+940GZZLUWYP,940GZZLUFYR,Wembley Park,Finchley Road,Metropolitan,Outbound,SB,SB
+940GZZLUWYP,940GZZLUPRD,Wembley Park,Preston Road,Metropolitan,Inbound,NB,NB
+940GZZLUWTA,940GZZLUEBY,West Acton,Ealing Broadway,Central,Inbound,WB,WB
+940GZZLUWTA,940GZZLUNAN,West Acton,North Acton,Central,Outbound,EB,EB
+940GZZLUWBN,940GZZLUFBY,West Brompton,Fulham Broadway,District,Inbound,WB,WB
+940GZZLUWBN,940GZZLUECT,West Brompton,Earl's Court,District,Outbound,EB,EB
+940GZZLUWFN,940GZZLUWOP,West Finchley,Woodside Park,Northern,Outbound,NB,NB
+940GZZLUWFN,940GZZLUFYC,West Finchley,Finchley Central,Northern,Inbound,SB,SB
+940GZZLUWHM,940GZZLUSTD,West Ham,Stratford,Jubilee,Outbound,EB,EB
+940GZZLUWHM,940GZZLUCGT,West Ham,Canning Town,Jubilee,Inbound,WB,WB
+940GZZLUWHM,940GZZLUBBB,West Ham,Bromley-By-Bow,District,Inbound,WB,WB
+940GZZLUWHM,940GZZLUPLW,West Ham,Plaistow,District,Outbound,EB,EB
+940GZZLUWHM,940GZZLUPLW,West Ham,Plaistow,Hammersmith & City,Outbound,EB,EB
+940GZZLUWHM,940GZZLUBBB,West Ham,Bromley-By-Bow,Hammersmith & City,Inbound,WB,WB
+940GZZLUWHP,940GZZLUFYR,West Hampstead,Finchley Road,Jubilee,Outbound,EB,SB
+940GZZLUWHP,940GZZLUKBN,West Hampstead,Kilburn,Jubilee,Inbound,WB,NB
+940GZZLUWHW,940GZZLUHOH,West Harrow,Harrow-On-The-Hill,Metropolitan,Outbound,SB,EB
+940GZZLUWHW,940GZZLURYL,West Harrow,Rayners Lane,Metropolitan,Inbound,NB,WB
+940GZZLUWKN,940GZZLUBSC,West Kensington,Barons Court,District,Inbound,WB,WB
+940GZZLUWKN,940GZZLUECT,West Kensington,Earl's Court,District,Outbound,EB,EB
+940GZZLUWRP,940GZZLURSG,West Ruislip,Ruislip Gardens,Central,Outbound,EB,EB
+940GZZLUWSP,940GZZLURYO,Westbourne Park,Royal Oak,Hammersmith & City,Outbound,EB,EB
+940GZZLUWSP,940GZZLULAD,Westbourne Park,Ladbroke Grove,Hammersmith & City,Inbound,WB,WB
+940GZZLUWSP,940GZZLURYO,Westbourne Park,Royal Oak,Circle,Outbound,EB,EB
+940GZZLUWSP,940GZZLULAD,Westbourne Park,Ladbroke Grove,Circle,Inbound,WB,WB
+940GZZLUWSM,940GZZLUWLO,Westminster,Waterloo,Jubilee,Outbound,EB,EB
+940GZZLUWSM,940GZZLUGPK,Westminster,Green Park,Jubilee,Inbound,WB,WB
+940GZZLUWSM,940GZZLUSJP,Westminster,St James's Park,District,Inbound,WB,WB
+940GZZLUWSM,940GZZLUEMB,Westminster,Embankment,District,Outbound,EB,EB
+940GZZLUWSM,940GZZLUSJP,Westminster,St James's Park,Circle,Outbound,OR,WB
+940GZZLUWSM,940GZZLUEMB,Westminster,Embankment,Circle,Inbound,IR,EB
+940GZZLUWCY,940GZZLUEAN,White City,East Acton,Central,Inbound,WB,WB
+940GZZLUWCY,940GZZLUSBC,White City,Shepherd's Bush,Central,Outbound,EB,EB
+940GZZLUWPL,940GZZLUADE,Whitechapel,Aldgate East,District,Inbound,WB,WB
+940GZZLUWPL,940GZZLUSGN,Whitechapel,Stepney Green,District,Outbound,EB,EB
+940GZZLUWPL,940GZZLUSGN,Whitechapel,Stepney Green,Hammersmith & City,Outbound,EB,EB
+940GZZLUWPL,940GZZLUADE,Whitechapel,Aldgate East,Hammersmith & City,Inbound,WB,WB
+940GZZLUWIG,940GZZLUKBN,Willesden Green,Kilburn,Jubilee,Outbound,EB,SB
+940GZZLUWIG,940GZZLUDOH,Willesden Green,Dollis Hill,Jubilee,Inbound,WB,NB
+940GZZLUWJN,940GZZLUKSL,Willesden Junction,Kensal Green,Bakerloo,Inbound,SB,SB
+940GZZLUWJN,940GZZLUHSN,Willesden Junction,Harlesden,Bakerloo,Outbound,NB,NB
+940GZZLUWIM,940GZZLUWIP,Wimbledon,Wimbledon Park,District,Outbound,EB,EB
+940GZZLUWIP,940GZZLUWIM,Wimbledon Park,Wimbledon,District,Inbound,WB,WB
+940GZZLUWIP,940GZZLUSFS,Wimbledon Park,Southfields,District,Outbound,EB,EB
+940GZZLUWOG,940GZZLUTPN,Wood Green,Turnpike Lane,Piccadilly,Inbound,WB,WB
+940GZZLUWOG,940GZZLUBDS,Wood Green,Bounds Green,Piccadilly,Outbound,EB,EB
+940GZZLUWLA,940GZZLULRD,Wood Lane,Latimer Road,Hammersmith & City,Outbound,EB,EB
+940GZZLUWLA,940GZZLUSBM,Wood Lane,Shepherd's Bush Market,Hammersmith & City,Inbound,WB,WB
+940GZZLUWLA,940GZZLULRD,Wood Lane,Latimer Road,Circle,Outbound,EB,EB
+940GZZLUWLA,940GZZLUSBM,Wood Lane,Shepherd's Bush Market,Circle,Inbound,WB,WB
+940GZZLUWOF,940GZZLUSWF,Woodford,South Woodford,Central,Inbound,WB,WB
+940GZZLUWOF,940GZZLURVY,Woodford,Roding Valley,Central,Inbound,WB,WB
+940GZZLUWOF,940GZZLUBKH,Woodford,Buckhurst Hill,Central,Outbound,EB,EB
+940GZZLUWOP,940GZZLUTAW,Woodside Park,Totteridge & Whetstone,Northern,Outbound,NB,NB
+940GZZLUWOP,940GZZLUWFN,Woodside Park,West Finchley,Northern,Inbound,SB,SB
