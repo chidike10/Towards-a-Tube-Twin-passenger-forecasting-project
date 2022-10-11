@@ -48,7 +48,7 @@ def get_api_records(api_name):
 
     # Displaying fetched records
     return file_name
-
+        
 
 # Lists
 page_options = [
@@ -106,17 +106,55 @@ def main():
 
     if page_selection == "Passenger Forecast":
         with header:
-            st.title('Explore The Tube Passenger Forecast')
+            st.title('Forecasting The Tube Passenger Count')
 
-        df = pd.read_csv('resources/data/df_in_2021_mtt.csv')
+        def get_data_year(df, station, day, dire, year):
+        
+            df = df
+            station = station
+            day = day
+            dire = dire
+            year = year
+            
+            data_in_sorted = df.sort_values(['asc', 'time'], ascending=[True, True])
+            df_in_new = data_in_sorted.loc[data_in_sorted.station==station]
+            df_in_new = df_in_new.loc[df_in_new.day==day]
+            df_in_new = df_in_new.loc[df_in_new.dir==dire]
+            df_in_new_year = df_in_new.loc[df_in_new.year_of_entry==year]
+            
+            df_in_new_year = df_in_new_year[['entry_date_time', 'counts']]
+        
+            return df_in_new_year
+
+        
         with dataset:
-            st.header('Passenger Forecst By Station')
+            station_option = st.selectbox('select station',
+                ('Acton Town', 'Arnos Grove', 'Aldgate', 'Aldgate East', 
+                    'Alperton','Amersham', 'Angel', 'Archway', 'Arsenal'))
+            station=station_option
+
+            day_option = st.selectbox('select day',
+                ('MTT', 'FRI', 'SAT', 'SUN'))
+            day=day_option
+
+            dir_option = st.selectbox('direction',
+                ('IN', 'OUT'))
+            dire=dir_option
+
+            year_option = st.selectbox('year',
+                (2018, 2019, 2020, 2021))
+            year=year_option        
+
+            data = pd.read_csv('resources/data/tube_time_interval_data_sorted.csv')
+
+            df = get_data_year(data, station, day, dire, year)
+            st.header('Passenger Forecast By Station')
+            st.write(station + ' ' + 'station'+ ' '+ str(year) + ' ' + 'data view')
             st.write(df.head())
             st.header('Visualize Historic Data for Selected Station and Day')
             if st.button('Visualize'):
                 st.line_chart(df.rename(columns={'entry_date_time':'index'}).set_index('index'))
         
-        with dataset: 
             st.header('Passenger Forecasting for Selected Day')
             df.columns = ['ds', 'y']
             m = Prophet(interval_width=0.95, daily_seasonality=True)
