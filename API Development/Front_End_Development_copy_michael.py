@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 from prophet import Prophet
 import base64
 import requests
+from matplotlib import pyplot as plt
+from prophet import Prophet
+from prophet.plot import plot_plotly
 
 header = st.container()
 dataset = st.container()
@@ -146,6 +149,7 @@ def main():
             year=year_option        
 
             data = pd.read_csv('resources/data/tube_time_interval_data_sorted.csv')
+            data['counts'] = data['counts'].round(decimals=0)
 
             df = get_data_year(data, station, day, dire, year)
             st.header('Passenger Forecast By Station')
@@ -163,8 +167,10 @@ def main():
             forecast = m.predict(future)
             
             if st.button('Make Forecast'):
-                plot1 = m.plot(forecast)
-                st.write(plot1)
+                fig = plot_plotly(model, forecast)
+                fig
+                # plot1 = m.plot(forecast)
+                # st.write(plot1)
             
             if st.button('Explore Componets of The Forecast'): 
                 plot2 = m.plot_components(forecast)
@@ -176,7 +182,34 @@ def main():
         st.title('PREDICTIVE MODELLING')
 
     if page_selection == 'Explorative Data Analysis [EDA]':
-        st.title('EXPLORATIVE DATA ANALSIS [EDA]')
+        with header:
+            st.title('EXPLORATIVE DATA ANALSIS [EDA]')
+
+            data = pd.read_csv('resources/data/tube_time_interval_data_sorted.csv')
+            data = data.drop('time', axis=1)
+
+            
+            st.write('Preview of all station dataset (first 5 records)')
+            if st.button('view top'):
+                st.write(data.sort_values('entry_date_time').head())
+
+            st.write('Preview of all station data (bottom 5)')
+            if st.button('view bottom'):
+                st.write(data.sort_values('entry_date_time').tail())
+
+        with dataset:
+            df = data[['entry_date_time', 'station', 'year_of_entry', 'day', 'dir', 'counts' ]]
+            df_top = df.loc[df.counts > 2000]          
+            df_top = df_top.sort_values('counts', ascending=False)
+            st.write(df_top)
+
+            st.write('The following list of stations are those captured in the dataset above with passenger counts ' +
+                'greater than 2000 for the corresponding years in the daily 15 minutes time interval.' + 
+                'These stations will be our main focus of interest in this exploration and also in the passenger counts forecasting '+
+                'As understanding the factors contributing to the busy passenger flow (IN and OUT) of the station will '+
+                'help us make good recommendations to TFL on improving the London Underground (The Tube) network lines')
+            top_station = df_top['station'].unique()
+            st.write(top_station)
 
     if page_selection == 'Train Simulation':
         st.title('TRAIN SIMULATION')
