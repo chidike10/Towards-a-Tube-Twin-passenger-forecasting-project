@@ -9,10 +9,14 @@ import requests
 from matplotlib import pyplot as plt
 from prophet import Prophet
 from prophet.plot import plot_plotly
+from plotly.offline import plot
+import seaborn as sns
+import plotly.express as px
+import matplotlib.ticker as ticker
+from plotly.offline import plot
 
 header = st.container()
 dataset = st.container()
-
 
 # Functions
 def add_bg_from_local(image_file):
@@ -186,7 +190,6 @@ def main():
             st.title('EXPLORATIVE DATA ANALSIS [EDA]')
 
             data = pd.read_csv('resources/data/tube_time_interval_data_sorted.csv')
-            data = data.drop('time', axis=1)
 
             
             st.write('Preview of all station dataset (first 5 records)')
@@ -197,9 +200,11 @@ def main():
             if st.button('view bottom'):
                 st.write(data.sort_values('entry_date_time').tail())
 
+
+
         with dataset:
             st.write('Table showing stations and times with highest number of passengers')
-            df = data[['entry_date_time', 'station', 'year_of_entry', 'day', 'dir', 'counts' ]]
+            df = data[['entry_date_time', 'time', 'station', 'year_of_entry', 'day', 'dir', 'counts' ]]
             df_top = df.loc[df.counts > 3000]          
             df_top = df_top.sort_values('counts', ascending=False)
             st.write(df_top)
@@ -212,11 +217,71 @@ def main():
             top_station = df_top['station'].unique()
             st.write(top_station)
 
-            #histogram
-            df_hist = df_top[['entry_date_time', 'counts']]
-            df_hist.hist()
-            plt.show()
-            st.pyplot()
+            df_bar = df_top.head(100)
+            # df_bar = df_bar.set_index('time')
+            fig = px.bar(df_bar, x='time', y = 'counts', color='station')
+            st.plotly_chart(fig)
+
+            fig.show()
+
+            from plotly.offline import plot
+            ax = sns.barplot(x = 'entry_date_time', y = 'counts', data = df_top.sort_values('counts', ascending=False).head(30),  
+                hue='station', palette='twilight_shifted', lw=3)
+            plt.xticks(rotation=45)
+            st.write(ax.get_figure())
+
+            with dataset:
+                st.write('Lets visualize the entire dataset to ')
+
+            # Splitting the dataset by the direction of passenger flow (IN and OUT)
+                list_station = ['Bank and Monument', 'Waterloo LU', 'Oxford Circus','Canary Wharf LU', 'Liverpool Street LU']
+                # 'Moorgate', 'London Bridge LU', 'Farringdon', 'Victoria LU', 'Green Park'
+                
+                df_station = data.loc[data['station'].isin(list_station)]
+                st.write(df_station.shape)
+
+                df_in = df_station.loc[data.dir=='IN']
+                df_out = df_station.loc[data.dir=='OUT']
+
+                # Creating new dataframes by directions and days
+                df_in_mtt = df_in.loc[df_in.day=='MTT']
+                df_out_mtt = df_out.loc[df_out.day=='MTT']
+
+                df_in_fri = df_in.loc[df_in.day=='FRI']
+                df_out_fri = df_out.loc[df_out.day=='FRI']
+
+                df_in_sat = df_in.loc[df_in.day=='SAT']
+                df_out_sat = df_out.loc[df_out.day=='SAT']
+
+                df_in_sun = df_in.loc[df_in.day=='SUN']
+                df_out_sun = df_out.loc[df_out.day=='SUN']
+
+                year_option2 = st.selectbox('year', (2018, 2019, 2020, 2021))
+                if year_option2:
+                    df_list = [df_in_mtt, df_out_mtt, df_in_fri, df_out_fri, df_in_sat, df_out_sat, df_in_sun, df_out_sun]
+                    year= year_option2
+
+                    for df in df_list:
+                        
+                        data = df.loc[df.year_of_entry==year]
+                        
+                        sns.set_style('darkgrid')
+                        sns.set(rc={'figure.figsize':(14,8)})
+
+                        ax = sns.lineplot(data=data.sort_values('entry_date_time', ascending=True), x ='entry_date_time', y = 'counts',
+                                          hue='station', palette='twilight_shifted',
+                                          legend='full', lw=3)
+
+                        ax.xaxis.set_major_locator(ticker.MultipleLocator(4))
+                        plt.legend(bbox_to_anchor=(1, 1))
+                        plt.xticks(rotation=45)
+                        
+                        plt.ylabel('Passenger Counts')
+                        plt.xlabel('Entry Time')
+                        plt.show()
+                        st.write(ax.get_figure())
+
+
 
     if page_selection == 'Train Simulation':
         st.title('TRAIN SIMULATION')
