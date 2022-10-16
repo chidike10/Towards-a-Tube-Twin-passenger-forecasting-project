@@ -1,0 +1,407 @@
+from_id,to_id,from_name,to_name,line,time
+11,163,Baker Street,Marylebone,1,1
+11,212,Baker Street,Regent's Park,1,2
+49,87,Charing Cross,Embankment,1,1
+49,197,Charing Cross,Picadilly Circus,1,2
+82,163,Edgware Road (B),Marylebone,1,2
+82,193,Edgware Road (B),Paddington,1,3
+84,148,Elephant & Castle,Lambeth North,1,3
+87,279,Embankment,Waterloo,1,2
+113,246,Harlesden,Stonebridge Park,1,2
+113,298,Harlesden,Willesden Junction,1,2
+114,140,Harrow & Wealdstone,Kenton,1,2
+137,206,Kensal Green,Queen's Park,1,3
+137,298,Kensal Green,Willesden Junction,1,3
+140,237,Kenton,South Kenton,1,2
+143,159,Kilburn Park,Maida Vale,1,2
+143,206,Kilburn Park,Queen's Park,1,2
+148,279,Lambeth North,Waterloo,1,1
+159,278,Maida Vale,Warwick Avenue,1,1
+185,237,North Wembley,South Kenton,1,2
+185,281,North Wembley,Wembley Central,1,2
+192,197,Oxford Circus,Picadilly Circus,1,2
+192,212,Oxford Circus,Regent's Park,1,2
+193,278,Paddington,Warwick Avenue,1,2
+246,281,Stonebridge Park,Wembley Central,1,3
+13,156,Bank,Liverpool Street,2,2
+13,250,Bank,St. Paul's,2,2
+16,91,Barkingside,Fairlop,2,2
+16,173,Barkingside,Newbury Park,2,2
+24,156,Bethnal Green,Liverpool Street,2,3
+24,164,Bethnal Green,Mile End,2,2
+28,162,Bond Street,Marble Arch,2,1
+28,192,Bond Street,Oxford Circus,2,1
+37,158,Buckhurst Hill,Loughton,2,3
+37,301,Buckhurst Hill,Woodford,2,3
+48,126,Chancery Lane,Holborn,2,1
+48,250,Chancery Lane,St. Paul's,2,2
+51,103,Chigwell,Grange Hill,2,2
+51,215,Chigwell,Roding Valley,2,2
+68,158,Debden,Loughton,2,2
+68,256,Debden,Theydon Bois,2,3
+72,286,Ealing Broadway,West Acton,2,3
+76,181,East Acton,North Acton,2,2
+76,296,East Acton,White City,2,3
+88,256,Epping,Theydon Bois,2,2
+91,109,Fairlop,Hainault,2,2
+98,173,Gants Hill,Newbury Park,2,3
+98,211,Gants Hill,Redbridge,2,2
+103,109,Grange Hill,Hainault,2,3
+105,177,Greenford,Northolt,2,2
+105,196,Greenford,Perivale,2,2
+112,181,Hanger Lane,North Acton,2,3
+112,196,Hanger Lane,Perivale,2,2
+126,259,Holborn,Tottenham Court Road,2,2
+127,186,Holland Park,Notting Hill Gate,2,2
+127,226,Holland Park,Shepherd's Bush (C),2,1
+149,162,Lancaster Gate,Marble Arch,2,3
+149,208,Lancaster Gate,Queensway,2,1
+153,154,Leyton,Leytonstone,2,3
+153,247,Leyton,Stratford,2,2
+154,230,Leytonstone,Snaresbrook,2,2
+154,275,Leytonstone,Wanstead,2,2
+164,247,Mile End,Stratford,2,4
+177,239,Northolt,South Ruislip,2,3
+181,286,North Acton,West Acton,2,2
+186,208,Notting Hill Gate,Queensway,2,2
+192,259,Oxford Circus,Tottenham Court Road,2,2
+211,275,Redbridge,Wanstead,2,2
+215,301,Roding Valley,Woodford,2,3
+221,239,Ruislip Gardens,South Ruislip,2,1
+221,294,Ruislip Gardens,West Ruislip,2,3
+226,296,Shepherd's Bush (C),White City,2,3
+230,241,Snaresbrook,South Woodford,2,2
+241,301,South Woodford,Woodford,2,2
+2,156,Aldgate,Liverpool Street,3,2
+2,263,Aldgate,Tower Hill,3,4
+11,83,Baker Street,Edgware Road (C),3,3
+11,104,Baker Street,Great Portland Street,3,3
+14,92,Barbican,Farringdon,3,1
+14,167,Barbican,Moorgate,3,2
+18,186,Bayswater,Notting Hill Gate,3,2
+18,193,Bayswater,Paddington,3,2
+25,161,Blackfriars,Mansion House,3,1
+25,255,Blackfriars,Temple,3,2
+44,161,Cannon Street,Mansion House,3,1
+44,166,Cannon Street,Monument,3,2
+83,193,Edgware Road (C),Paddington,3,3
+87,255,Embankment,Temple,3,2
+87,285,Embankment,Westminster,3,2
+90,104,Euston Square,Great Portland Street,3,2
+90,145,Euston Square,King's Cross St. Pancras,3,2
+92,145,Farringdon,King's Cross St. Pancras,3,4
+99,122,Gloucester Road,High Street Kensington,3,4
+99,236,Gloucester Road,South Kensington,3,1
+122,186,High Street Kensington,Notting Hill Gate,3,3
+156,167,Liverpool Street,Moorgate,3,2
+166,263,Monument,Tower Hill,3,2
+229,236,Sloane Square,South Kensington,3,2
+229,273,Sloane Square,Victoria,3,2
+248,273,St. James's Park,Victoria,3,2
+248,285,St. James's Park,Westminster,3,2
+3,263,Aldgate East,Tower Hill,4,2
+3,295,Aldgate East,Whitechapel,4,2
+15,78,Barking,East Ham,4,4
+15,269,Barking,Upney,4,2
+17,110,Barons Court,Hammersmith,4,1
+17,293,Barons Court,West Kensington,4,2
+18,186,Bayswater,Notting Hill Gate,4,2
+18,193,Bayswater,Paddington,4,2
+21,67,Becontree,Dagenham Heathway,4,3
+21,269,Becontree,Upney,4,2
+25,161,Blackfriars,Mansion House,4,1
+25,255,Blackfriars,Temple,4,2
+33,36,Bow Road,Bromley-By-Bow,4,2
+33,164,Bow Road,Mile End,4,1
+36,289,Bromley-By-Bow,West Ham,4,2
+44,161,Cannon Street,Mansion House,4,1
+44,166,Cannon Street,Monument,4,2
+52,1,Chiswick Park,Acton Town,4,2
+52,265,Chiswick Park,Turnham Green,4,2
+66,67,Dagenham East,Dagenham Heathway,4,4
+66,85,Dagenham East,Elm Park,4,3
+72,73,Ealing Broadway,Ealing Common,4,4
+73,1,Ealing Common,Acton Town,4,2
+74,99,Earl's Court,Gloucester Road,4,3
+74,122,Earl's Court,High Street Kensington,4,3
+74,138,Earl's Court,Kensington (Olympia),4,2
+74,287,Earl's Court,West Brompton,4,2
+74,293,Earl's Court,West Kensington,4,1
+78,270,East Ham,Upton Park,4,2
+80,205,East Putney,Putney Bridge,4,2
+80,231,East Putney,Southfields,4,2
+83,193,Edgware Road (C),Paddington,4,3
+85,129,Elm Park,Hornchurch,4,2
+87,255,Embankment,Temple,4,2
+87,285,Embankment,Westminster,4,2
+96,195,Fulham Broadway,Parsons Green,4,2
+96,287,Fulham Broadway,West Brompton,4,1
+99,236,Gloucester Road,South Kensington,4,1
+108,141,Gunnersbury,Kew Gardens,4,3
+108,265,Gunnersbury,Turnham Green,4,3
+110,209,Hammersmith,Ravenscourt Park,4,2
+122,186,High Street Kensington,Notting Hill Gate,4,3
+129,268,Hornchurch,Upminster Bridge,4,2
+141,213,Kew Gardens,Richmond,4,3
+164,244,Mile End,Stepney Green,4,2
+166,263,Monument,Tower Hill,4,2
+195,205,Parsons Green,Putney Bridge,4,3
+200,270,Plaistow,Upton Park,4,2
+200,289,Plaistow,West Ham,4,2
+209,242,Ravenscourt Park,Stamford Brook,4,2
+229,236,Sloane Square,South Kensington,4,2
+229,273,Sloane Square,Victoria,4,2
+231,300,Southfields,Wimbledon Park,4,3
+242,265,Stamford Brook,Turnham Green,4,1
+244,295,Stepney Green,Whitechapel,4,3
+248,273,St. James's Park,Victoria,4,2
+248,285,St. James's Park,Westminster,4,2
+267,268,Upminster,Upminster Bridge,4,3
+299,300,Wimbledon,Wimbledon Park,4,3
+4,70,All Saints,Devons Road,13,2
+4,201,All Saints,Poplar,13,2
+13,225,Bank,Shadwell,13,2
+19,97,Beckton,Gallions Reach,13,2
+20,65,Beckton Park,Cyprus,13,2
+20,217,Beckton Park,Royal Albert,13,2
+27,79,Blackwall,East India,13,2
+27,201,Blackwall,Poplar,13,2
+32,70,Bow Church,Devons Road,13,2
+32,204,Bow Church,Pudding Mill Lane,13,2
+42,120,Canary Wharf,Heron Quays,13,2
+42,292,Canary Wharf,West India Quay,13,2
+43,79,Canning Town,East India,13,2
+43,219,Canning Town,Royal Victoria,13,2
+61,171,Crossharbour & London Arena,Mudchute,13,2
+61,238,Crossharbour & London Arena,South Quay,13,2
+63,203,Custom House,Prince Regent,13,2
+63,219,Custom House,Royal Victoria,13,2
+64,106,Cutty Sark,Greenwich,13,2
+64,135,Cutty Sark,Island Gardens,13,2
+65,97,Cyprus,Gallions Reach,13,2
+69,86,Deptford Bridge,Elverson Road,13,2
+69,106,Deptford Bridge,Greenwich,13,2
+86,152,Elverson Road,Lewisham,13,2
+120,238,Heron Quays,South Quay,13,2
+135,171,Island Gardens,Mudchute,13,2
+155,225,Limehouse,Shadwell,13,2
+155,284,Limehouse,Westferry,13,2
+201,284,Poplar,Westferry,13,2
+201,292,Poplar,West India Quay,13,2
+203,217,Prince Regent,Royal Albert,13,2
+204,247,Pudding Mill Lane,Stratford,13,2
+225,262,Shadwell,Tower Gateway,13,2
+284,292,Westferry,West India Quay,13,2
+41,216,Canada Water,Rotherhithe,5,1
+41,253,Canada Water,Surrey Quays,5,2
+174,253,New Cross,Surrey Quays,5,4
+175,253,New Cross Gate,Surrey Quays,5,4
+216,276,Rotherhithe,Wapping,5,1
+225,276,Shadwell,Wapping,5,1
+225,295,Shadwell,Whitechapel,5,2
+228,295,Shoreditch,Whitechapel,5,2
+3,156,Aldgate East,Liverpool Street,6,4
+3,295,Aldgate East,Whitechapel,6,2
+11,83,Baker Street,Edgware Road (C),6,3
+11,104,Baker Street,Great Portland Street,6,3
+14,92,Barbican,Farringdon,6,1
+14,167,Barbican,Moorgate,6,2
+15,78,Barking,East Ham,6,4
+33,36,Bow Road,Bromley-By-Bow,6,2
+33,164,Bow Road,Mile End,6,1
+36,289,Bromley-By-Bow,West Ham,6,2
+78,270,East Ham,Upton Park,6,2
+83,193,Edgware Road (C),Paddington,6,4
+90,104,Euston Square,Great Portland Street,6,2
+90,145,Euston Square,King's Cross St. Pancras,6,2
+92,145,Farringdon,King's Cross St. Pancras,6,4
+101,110,Goldhawk Road,Hammersmith,6,2
+101,227,Goldhawk Road,Shepherd's Bush (H),6,1
+147,150,Ladbroke Grove,Latimer Road,6,1
+147,283,Ladbroke Grove,Westbourne Park,6,2
+150,227,Latimer Road,Shepherd's Bush (H),6,2
+156,167,Liverpool Street,Moorgate,6,2
+164,244,Mile End,Stepney Green,6,2
+193,218,Paddington,Royal Oak,6,1
+200,270,Plaistow,Upton Park,6,2
+200,289,Plaistow,West Ham,6,2
+218,283,Royal Oak,Westbourne Park,6,2
+244,295,Stepney Green,Whitechapel,6,3
+11,28,Baker Street,Bond Street,7,2
+11,249,Baker Street,St. John's Wood,7,4
+23,41,Bermondsey,Canada Water,7,2
+23,157,Bermondsey,London Bridge,7,3
+28,107,Bond Street,Green Park,7,2
+41,42,Canada Water,Canary Wharf,7,3
+42,183,Canary Wharf,North Greenwich,7,3
+43,183,Canning Town,North Greenwich,7,3
+43,289,Canning Town,West Ham,7,3
+45,207,Canons Park,Queensbury,7,2
+45,243,Canons Park,Stanmore,7,2
+71,172,Dollis Hill,Neasden,7,2
+71,297,Dollis Hill,Willesden Green,7,2
+94,254,Finchley Road,Swiss Cottage,7,2
+94,290,Finchley Road,West Hampstead,7,1
+107,285,Green Park,Westminster,7,3
+142,290,Kilburn,West Hampstead,7,2
+142,297,Kilburn,Willesden Green,7,2
+144,207,Kingsbury,Queensbury,7,2
+144,282,Kingsbury,Wembley Park,7,4
+157,233,London Bridge,Southwark,7,2
+172,282,Neasden,Wembley Park,7,4
+233,279,Southwark,Waterloo,7,1
+247,289,Stratford,West Ham,7,3
+249,254,St. John's Wood,Swiss Cottage,7,1
+279,285,Waterloo,Westminster,7,2
+2,156,Aldgate,Liverpool Street,8,2
+6,46,Amersham,Chalfont & Latimer,8,4
+11,94,Baker Street,Finchley Road,8,6
+11,104,Baker Street,Great Portland Street,8,3
+14,92,Barbican,Farringdon,8,1
+14,167,Barbican,Moorgate,8,2
+46,50,Chalfont & Latimer,Chesham,8,8
+46,53,Chalfont & Latimer,Chorleywood,8,4
+53,214,Chorleywood,Rickmansworth,8,4
+62,168,Croxley,Moor Park,8,4
+62,280,Croxley,Watford,8,3
+75,210,Eastcote,Rayners Lane,8,2
+75,222,Eastcote,Ruislip Manor,8,2
+90,104,Euston Square,Great Portland Street,8,2
+90,145,Euston Square,King's Cross St. Pancras,8,2
+92,145,Farringdon,King's Cross St. Pancras,8,4
+94,282,Finchley Road,Wembley Park,8,7
+115,178,Harrow-on-the-Hill,Northwick Park,8,2
+115,184,Harrow-on-the-Hill,North Harrow,8,3
+115,291,Harrow-on-the-Hill,West Harrow,8,2
+125,134,Hillingdon,Ickenham,8,2
+125,271,Hillingdon,Uxbridge,8,3
+134,220,Ickenham,Ruislip,8,3
+156,167,Liverpool Street,Moorgate,8,2
+168,179,Moor Park,Northwood,8,3
+168,214,Moor Park,Rickmansworth,8,4
+178,202,Northwick Park,Preston Road,8,2
+179,180,Northwood,Northwood Hills,8,2
+180,199,Northwood Hills,Pinner,8,2
+184,199,North Harrow,Pinner,8,3
+202,282,Preston Road,Wembley Park,8,3
+210,291,Rayners Lane,West Harrow,8,3
+220,222,Ruislip,Ruislip Manor,8,2
+7,145,Angel,King's Cross St. Pancras,9,2
+7,188,Angel,Old Street,9,3
+8,124,Archway,Highgate,9,3
+8,264,Archway,Tufnell Park,9,2
+12,56,Balham,Clapham South,9,2
+12,257,Balham,Tooting Bec,9,1
+13,157,Bank,London Bridge,9,2
+13,167,Bank,Moorgate,9,3
+22,47,Belsize Park,Chalk Farm,9,2
+22,111,Belsize Park,Hampstead,9,2
+29,84,Borough,Elephant & Castle,9,1
+29,157,Borough,London Bridge,9,2
+34,100,Brent Cross,Golders Green,9,3
+34,119,Brent Cross,Hendon Central,9,2
+38,58,Burnt Oak,Colindale,9,2
+38,81,Burnt Oak,Edgware,9,3
+40,47,Camden Town,Chalk Farm,9,2
+40,89,Camden Town,Euston,9,3
+40,139,Camden Town,Kentish Town,9,2
+40,170,Camden Town,Mornington Crescent,9,1
+49,87,Charing Cross,Embankment,9,1
+49,151,Charing Cross,Leicester Square,9,2
+54,55,Clapham Common,Clapham North,9,2
+54,56,Clapham Common,Clapham South,9,2
+55,245,Clapham North,Stockwell,9,1
+58,119,Colindale,Hendon Central,9,3
+59,240,Colliers Wood,South Wimbledon,9,2
+59,258,Colliers Wood,Tooting Broadway,9,2
+77,93,East Finchley,Finchley Central,9,4
+77,124,East Finchley,Highgate,9,2
+84,136,Elephant & Castle,Kennington,9,2
+87,279,Embankment,Waterloo,9,2
+89,145,Euston,King's Cross St. Pancras,9,2
+89,170,Euston,Mornington Crescent,9,2
+89,277,Euston,Warren Street,9,1
+93,165,Finchley Central,Mill Hill East,9,3
+93,288,Finchley Central,West Finchley,9,2
+100,111,Golders Green,Hampstead,9,4
+102,259,Goodge Street,Tottenham Court Road,9,1
+102,277,Goodge Street,Warren Street,9,2
+121,261,High Barnet,Totteridge & Whetstone,9,3
+136,191,Kennington,Oval,9,2
+136,279,Kennington,Waterloo,9,3
+139,264,Kentish Town,Tufnell Park,9,2
+151,259,Leicester Square,Tottenham Court Road,9,1
+167,188,Moorgate,Old Street,9,1
+169,240,Morden,South Wimbledon,9,4
+191,245,Oval,Stockwell,9,3
+257,258,Tooting Bec,Tooting Broadway,9,2
+261,302,Totteridge & Whetstone,Woodside Park,9,3
+288,302,West Finchley,Woodside Park,9,1
+1,73,Acton Town,Ealing Common,10,2
+1,234,Acton Town,South Ealing,10,4
+1,265,Acton Town,Turnham Green,10,3
+5,194,Alperton,Park Royal,10,3
+5,252,Alperton,Sudbury Town,10,2
+9,31,Arnos Grove,Bounds Green,10,3
+9,232,Arnos Grove,Southgate,10,3
+10,95,Arsenal,Finsbury Park,10,2
+10,128,Arsenal,Holloway Road,10,1
+17,74,Barons Court,Earl's Court,10,3
+17,110,Barons Court,Hammersmith,10,2
+30,176,Boston Manor,Northfields,10,2
+30,190,Boston Manor,Osterley,10,3
+31,303,Bounds Green,Wood Green,10,2
+39,128,Caledonian Road,Holloway Road,10,2
+39,145,Caledonian Road,King's Cross St. Pancras,10,5
+57,187,Cockfosters,Oakwood,10,4
+60,126,Covent Garden,Holborn,10,1
+60,151,Covent Garden,Leicester Square,10,1
+73,182,Ealing Common,North Ealing,10,3
+74,99,Earl's Court,Gloucester Road,10,2
+75,210,Eastcote,Rayners Lane,10,2
+75,222,Eastcote,Ruislip Manor,10,2
+95,160,Finsbury Park,Manor House,10,2
+99,236,Gloucester Road,South Kensington,10,1
+107,133,Green Park,Hyde Park Corner,10,2
+107,197,Green Park,Picadilly Circus,10,1
+110,265,Hammersmith,Turnham Green,10,2
+116,117,Hatton Cross,"Heathrow Terminals 1, 2 & 3",10,3
+116,118,Hatton Cross,Heathrow Terminal 4,10,3
+116,132,Hatton Cross,Hounslow West,10,4
+117,118,"Heathrow Terminals 1, 2 & 3",Heathrow Terminal 4,10,5
+125,134,Hillingdon,Ickenham,10,2
+125,271,Hillingdon,Uxbridge,10,3
+126,223,Holborn,Russell Square,10,2
+130,131,Hounslow Central,Hounslow East,10,2
+130,132,Hounslow Central,Hounslow West,10,2
+131,190,Hounslow East,Osterley,10,2
+133,146,Hyde Park Corner,Knightsbridge,10,2
+134,220,Ickenham,Ruislip,10,3
+145,223,King's Cross St. Pancras,Russell Square,10,2
+146,236,Knightsbridge,South Kensington,10,3
+151,197,Leicester Square,Picadilly Circus,10,2
+160,266,Manor House,Turnpike Lane,10,3
+176,234,Northfields,South Ealing,10,1
+182,194,North Ealing,Park Royal,10,2
+187,232,Oakwood,Southgate,10,3
+210,235,Rayners Lane,South Harrow,10,3
+220,222,Ruislip,Ruislip Manor,10,2
+235,251,South Harrow,Sudbury Hill,10,2
+251,252,Sudbury Hill,Sudbury Town,10,3
+266,303,Turnpike Lane,Wood Green,10,2
+26,260,Blackhorse Road,Tottenham Hale,11,2
+26,274,Blackhorse Road,Walthamstow Central,11,2
+35,245,Brixton,Stockwell,11,2
+89,145,Euston,King's Cross St. Pancras,11,2
+89,277,Euston,Warren Street,11,1
+95,123,Finsbury Park,Highbury & Islington,11,2
+95,224,Finsbury Park,Seven Sisters,11,4
+107,192,Green Park,Oxford Circus,11,2
+107,273,Green Park,Victoria,11,2
+123,145,Highbury & Islington,King's Cross St. Pancras,11,4
+192,277,Oxford Circus,Warren Street,11,2
+198,272,Pimlico,Vauxhall,11,1
+198,273,Pimlico,Victoria,11,3
+224,260,Seven Sisters,Tottenham Hale,11,3
+245,272,Stockwell,Vauxhall,11,3
+13,279,Bank,Waterloo,12,4
