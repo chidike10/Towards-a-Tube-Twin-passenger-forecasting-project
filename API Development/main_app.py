@@ -60,10 +60,8 @@ def get_api_records(api_name):
 # Lists
 page_options = [
     "Landing Page",
-    "Live Feed",
-    "Modelling",
-    "Passenger Forecast",
     "Explorative Data Analysis [EDA]",
+    "Passenger Forecast",
     "Train Simulation",
     "About Team"
 ]
@@ -111,6 +109,141 @@ def main():
                 df1 = get_api_records(api_dict['Line'])
                 st.dataframe(df1)
 
+    if page_selection == 'Explorative Data Analysis [EDA]':
+
+        with header:
+            st.title('EXPLORATIVE DATA ANALSIS [EDA]')
+
+            st.markdown('**The Project**')
+
+            st.write("The London Underground Railway Network (The Tube) is a rapid transit system serving "
+             + "Greater London and some parts of the adjacent counties of Buckinghamshire, " +
+                "Essex and Hertfordshire in England. The Underground has its origins in the Metropolitan Railway, " +
+                "the world's first underground passenger railway")
+
+            st.write('The data for the London Underground is a time series data collected over a period of 4 years ' +
+                "that shows the passenger counts (Inflow and Outflows) for all stations in the network in different days "
+                + "of the week")
+
+            st.write("The days as captured in the data with their notations are:")
+            st.markdown("- Mondays to Thursdays (MTT)")
+            st.markdown("- Fridays (FRI)")
+            st.markdown("- Saturdays (SAT)")
+            st.markdown("- Sundays (SUN)")
+
+            st.markdown('''
+            <style>
+            [data-testid="stMarkdownContainer"] ul{
+                list-style-position: inside;
+            }
+            </style>
+            ''', unsafe_allow_html=True)
+
+            st.write("This Exploratory Data Analysis (EDA) brings key insights from the London Underground data " +
+                "by using visual plots to explore the historic data and tell few stories before we try to make " + 
+                "some forecast into the future passengercounts")
+
+            data = pd.read_csv('resources/data/tube_time_interval_data_sorted.csv')
+
+            st.markdown('******Exploring the data******')
+            st.write('Clicking the ***view top*** button bellow will display the first 5 rows of The Tube dataset, ' +
+                'and also the ***view bottom*** shows the last 5 rows')
+            st.write('Preview of all station dataset (first 5 records)')
+            if st.button('view top'):
+                st.write(data.sort_values('entry_date_time').head())
+
+            st.write('Preview of all station data (bottom 5)')
+            if st.button('view bottom'):
+                st.write(data.sort_values('entry_date_time').tail())
+
+        with dataset:
+            st.write("Our main analysis targets the London Underground stations with the highest number "+
+                "of passenger counts, so the table below shows those station queried from the general dataset")
+            
+            df = data[['entry_date_time', 'time', 'station', 'year_of_entry', 'day', 'dir', 'counts' ]]
+            df_top = df.loc[df.counts > 3000]          
+            df_top = df_top.sort_values('counts', ascending=False)
+            st.write(df_top)
+
+            st.write('From the result shown in the table above, we can see that the ***Bank and Monument*** '+
+                'and ***Waterloo LU*** stations are 2 most busiest ,and the trend is spread across different years'+
+                ' and interestingly they both lie in the same ***zone 1*** '+ "of The Tube map. This shows a "+ 
+                "potential heavy weight on the associated lines. We will explore these stations.")
+
+            st.write('The following list of stations are those captured in the dataset above with passenger counts ' +
+                'greater than 3000 for the corresponding years in the daily 15 minutes time interval.' + 
+                ' These stations will be our main focus of interest in this exploration and also in the passenger counts forecasting '+
+                'As understanding the factors contributing to the busy passenger flow (IN and OUT) of the station will '+
+                'help us make good recommendations to TFL on improving the London Underground (The Tube) network lines')
+            top_station = df_top['station'].unique()
+            st.write(top_station)
+
+            st.write("Using an interactive ***Bar Chart***, we can visualize these stations and look at the ***Time*** associated "+
+                "with the high traffic per stations. With the station legends ***(Names)*** on the right of the chart, we can "+
+                "select the stations we want to view by dehighlighting other station. This presents a bolder non-clustered chart")
+
+            df_bar = df_top.head(500)
+            # df_bar = df_bar.set_index('time')
+            fig = px.bar(df_bar, x='time', y = 'counts', color='station')
+            st.plotly_chart(fig)
+
+            st.write("The Bar Chart above provided the right insight on the ***Time*** and ***Stations*** with highest passenger "+
+                "traffic. But to view the year that produced the top 30 recorded passenger counts within the period of 4 years, "+
+                "we will use a static Bar Chart this time. The plot below presents that data with complete date and time on X-axis. "+
+                "and Passenger counts on Y-axis")
+            from plotly.offline import plot
+            ax = sns.barplot(x = 'entry_date_time', y = 'counts', data = df_top.sort_values('counts', ascending=False).head(30),  
+                hue='station', palette='twilight_shifted', lw=3)
+            plt.xticks(rotation=45)
+            st.write(ax.get_figure())
+
+            with dataset:
+                st.write('***TIME SERIES VISUALIZATION***')
+                st.markdown('<p style="font-family:Courier; color:Blue; font-size: 20px;">TIME SERIES VISUALIZATION</p>', unsafe_allow_html=True)
+                # Building the function to help slice the required data for visualization
+                def get_data_top_stations(df, year, day, dire):
+                
+                    df = df
+                    day = day
+                    dire = dire
+                    year = year
+                    
+                    data_in_sorted = df.sort_values(['asc', 'time'], ascending=[True, True])
+                    df_in_new = data_in_sorted.loc[data_in_sorted.day==day]
+                    df_in_new = df_in_new.loc[df_in_new.dir==dire]
+                    df_in_new_year = df_in_new.loc[df_in_new.year_of_entry==year]
+                    
+                    df_in_new_year = df_in_new_year[['entry_date_time', 'station', 'time', 'counts']]
+                
+                    return df_in_new_year
+
+                st.write('Lets visualize the entire dataset to ')
+
+                data_top = pd.read_csv('resources/data/tube_time_interval_data_sorted.csv')
+                data_top['counts'] = data['counts'].round(decimals=0)
+
+                list_station = ['Bank and Monument', 'Waterloo LU', 'Oxford Circus',
+                'Canary Wharf LU', 'Liverpool Street LU', 'Moorgate','London Bridge LU', 
+                'Farringdon', 'Victoria LU', 'Green Park']
+                df_top_station = data_top.loc[data_top['station'].isin(list_station)]
+
+
+                col1, col2, col3 = st.columns(3)
+                col1 = st.selectbox('year',(2018, 2019, 2020, 2021))
+                year = col1
+                col2 = st.selectbox('select day',('MTT', 'FRI', 'SAT', 'SUN'))
+                day = col2
+                col3 = st.selectbox('direction',('IN', 'OUT'))
+                dire=col3
+
+                df = get_data_top_stations(df_top_station, year, day, dire)
+    
+                sns.set_style('darkgrid')
+                sns.set(rc={'figure.figsize':(14,8)})
+
+                fig2 = px.line(df.sort_values('entry_date_time', ascending=True), x='time', y = 'counts', color='station')
+                st.plotly_chart(fig2)    
+
     if page_selection == "Passenger Forecast":
         with header:
             st.title('Forecasting The Tube Passenger Count')
@@ -136,8 +269,10 @@ def main():
         
         with dataset:
             station_option = st.selectbox('select station',
-                ('Acton Town', 'Arnos Grove', 'Aldgate', 'Aldgate East', 
-                    'Alperton','Amersham', 'Angel', 'Archway', 'Arsenal'))
+                ('Bank and Monument', 'Waterloo LU', 'Oxford Circus','Canary Wharf LU', 
+                    'Liverpool Street LU', 'Moorgate','London Bridge LU', 'Farringdon', 
+                    'Victoria LU', 'Green Park',"King's Cross St. Pancras", 'Holborn', 
+                    'Brixton LU', 'Stratford','Finsbury Park'))
             station=station_option
 
             day_option = st.selectbox('select day',
@@ -179,109 +314,7 @@ def main():
             if st.button('Explore Componets of The Forecast'): 
                 plot2 = m.plot_components(forecast)
                 st.write(plot2)
-
-
-
-    if page_selection == 'Modelling':
-        st.title('PREDICTIVE MODELLING')
-
-    if page_selection == 'Explorative Data Analysis [EDA]':
-        with header:
-            st.title('EXPLORATIVE DATA ANALSIS [EDA]')
-
-            data = pd.read_csv('resources/data/tube_time_interval_data_sorted.csv')
-
-            
-            st.write('Preview of all station dataset (first 5 records)')
-            if st.button('view top'):
-                st.write(data.sort_values('entry_date_time').head())
-
-            st.write('Preview of all station data (bottom 5)')
-            if st.button('view bottom'):
-                st.write(data.sort_values('entry_date_time').tail())
-
-
-
-        with dataset:
-            st.write('Table showing stations and times with highest number of passengers')
-            df = data[['entry_date_time', 'time', 'station', 'year_of_entry', 'day', 'dir', 'counts' ]]
-            df_top = df.loc[df.counts > 3000]          
-            df_top = df_top.sort_values('counts', ascending=False)
-            st.write(df_top)
-
-            st.write('The following list of stations are those captured in the dataset above with passenger counts ' +
-                'greater than 3000 for the corresponding years in the daily 15 minutes time interval.' + 
-                ' These stations will be our main focus of interest in this exploration and also in the passenger counts forecasting '+
-                'As understanding the factors contributing to the busy passenger flow (IN and OUT) of the station will '+
-                'help us make good recommendations to TFL on improving the London Underground (The Tube) network lines')
-            top_station = df_top['station'].unique()
-            st.write(top_station)
-
-            df_bar = df_top.head(100)
-            # df_bar = df_bar.set_index('time')
-            fig = px.bar(df_bar, x='time', y = 'counts', color='station')
-            st.plotly_chart(fig)
-
-            fig.show()
-
-            from plotly.offline import plot
-            ax = sns.barplot(x = 'entry_date_time', y = 'counts', data = df_top.sort_values('counts', ascending=False).head(30),  
-                hue='station', palette='twilight_shifted', lw=3)
-            plt.xticks(rotation=45)
-            st.write(ax.get_figure())
-
-            with dataset:
-                st.write('Lets visualize the entire dataset to ')
-
-            # Splitting the dataset by the direction of passenger flow (IN and OUT)
-                list_station = ['Bank and Monument', 'Waterloo LU', 'Oxford Circus','Canary Wharf LU', 'Liverpool Street LU']
-                # 'Moorgate', 'London Bridge LU', 'Farringdon', 'Victoria LU', 'Green Park'
-                
-                df_station = data.loc[data['station'].isin(list_station)]
-                st.write(df_station.shape)
-
-                df_in = df_station.loc[data.dir=='IN']
-                df_out = df_station.loc[data.dir=='OUT']
-
-                # Creating new dataframes by directions and days
-                df_in_mtt = df_in.loc[df_in.day=='MTT']
-                df_out_mtt = df_out.loc[df_out.day=='MTT']
-
-                df_in_fri = df_in.loc[df_in.day=='FRI']
-                df_out_fri = df_out.loc[df_out.day=='FRI']
-
-                df_in_sat = df_in.loc[df_in.day=='SAT']
-                df_out_sat = df_out.loc[df_out.day=='SAT']
-
-                df_in_sun = df_in.loc[df_in.day=='SUN']
-                df_out_sun = df_out.loc[df_out.day=='SUN']
-
-                year_option2 = st.selectbox('year', (2018, 2019, 2020, 2021))
-                if year_option2:
-                    df_list = [df_in_mtt, df_out_mtt, df_in_fri, df_out_fri, df_in_sat, df_out_sat, df_in_sun, df_out_sun]
-                    year= year_option2
-
-                    for df in df_list:
-                        
-                        data = df.loc[df.year_of_entry==year]
-                        
-                        sns.set_style('darkgrid')
-                        sns.set(rc={'figure.figsize':(14,8)})
-
-                        ax = sns.lineplot(data=data.sort_values('entry_date_time', ascending=True), x ='entry_date_time', y = 'counts',
-                                          hue='station', palette='twilight_shifted',
-                                          legend='full', lw=3)
-
-                        ax.xaxis.set_major_locator(ticker.MultipleLocator(4))
-                        plt.legend(bbox_to_anchor=(1, 1))
-                        plt.xticks(rotation=45)
-                        
-                        plt.ylabel('Passenger Counts')
-                        plt.xlabel('Entry Time')
-                        plt.show()
-                        st.write(ax.get_figure())
-
-
+ 
 
     if page_selection == 'Train Simulation':
         st.title('TRAIN SIMULATION')
