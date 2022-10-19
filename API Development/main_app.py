@@ -60,10 +60,11 @@ def get_api_records(api_name):
 # Lists
 page_options = [
     "Landing Page",
+    "About The Project",
     "Explorative Data Analysis [EDA]",
     "Passenger Forecast",
     "Train Simulation",
-    "About Team"
+    "About The Team"
 ]
 api_options = [
     "Air Quality",
@@ -108,6 +109,97 @@ def main():
                 st.subheader('URL: ' + api_dict['Line'])
                 df1 = get_api_records(api_dict['Line'])
                 st.dataframe(df1)
+
+    if page_selection == 'About The Project':
+    
+        with header:
+            st.title('The Tube Twin Project')
+            st.image('resources/images/the tube.jpeg', use_column_width='always', output_format='jpeg')
+            st.subheader('The Summary')  
+            st.write("With around 400km of rails, over 267 stations, and more than 1.3 billion "+ 
+                "passenger journeys each year (according to the project data), quickly andsafely "+ 
+                "moving passengers through stations and onto trains is an ongoing priority for "+ 
+                "the London Underground. Gaining deeper insights into passengercounts and traffic " 
+                "at the different stations will help Transport for London (TfL)make better "
+                "decisions and plan for future operations.") 
+            st.write("This project's objective is to provide data solutions that provides decision " 
+                "making support to the management of the Tube in delivering a more efficient and "
+                "reliable underground rail transport system. This system will provide a graphical "
+                "network, a forecasting model for passenger count, and tube analyses for "
+                "recommendations on operations and traffic flow.") 
+            st.write("The analysis is based on historical data collected from TfL's open data API, " 
+                "which shows records of the number of passengers inflow and outflow per station "
+                "in daily 15 minutes time interval. This project produced a web-based data application"
+                " developed with ***Streamlit*** and deployed on ***AWS Cloud*** to integrated the " 
+                " the digital solutions to the problems discussed below.")
+
+            
+            st.subheader('Introduction & Problem Statement')
+            st.write(" Transport for London (TfL) is a local government body responsible for most of " 
+                "London's transport network, including the London Underground (LU, aka The Tube). "
+                "The tube is a public railway transit system that serves Greater London and its nearby" 
+                "counties.")   
+            st.write("London has a population of approximately 9 million people, on top of "
+                "hundreds and thousands of tourists visit it every day. This presents some challenges "
+                "to TfL concerning operations of the tube railway network which includes the following:")
+            st.markdown("- Network operations and surveillance.")
+            st.markdown("- Traffic flow, analyses, and control.")
+            st.markdown("- Infrastructure management and maintenance.")
+
+            st.subheader("Solution")
+            st.write("As part of this project and with the aim of tackling the problems mentioned above the "
+                "***Explore AI Tube Twin team 6*** designed and created a digital system to address each of "
+                "them. These include the following:")
+            st.markdown("1. **A Graphical Network of the Tube**")
+            st.write("From the data gotten from Tfl, we generated a graph representation of the tube "
+                "network using NetworkX. From this graph, we were able to make a few analyses like " 
+                "determining the important and busiest stations within the network. The image below "
+                "shows the network stations connectivity with the most important stations shown in "
+                "larger circles. This importance is determined by some station (called the node) features "
+                "like the number of lines connecting on stations (edges)." )
+            st.image('resources/images/bokeh_plot_new.png', width=600 )
+
+            st.markdown("2. **A Simulation of the Tube Network**")
+            st.write("We created a simulation of the tube network using SUMO. For this, we selected a "
+                "few stations based on their importance and usage ranking.")
+
+            st.markdown("3. **A Model to Forecast Passenger Count**")
+            st.write("We created a time-series model to forecast passenger count based on stations, "
+                "year, and day. We achieved this by making use of the Python library, FBProphet model in" 
+                "in a process called ***Transfer Learning***. This will allow Tfl to predict future "
+                "traffic and plan ahead of time.")
+
+            st.write("Although not limited to these, the above are the main focus which, all together ,"
+                "form the problem we tried to solve")  
+
+            st.subheader("Conclusion and Recommendation")
+            st.write("The Tube Twin analysis and and passenger forecasting conducted in this project " 
+                "provides the solution to the traffic issues in the heavily-weighted Tube station lines. "
+                "The deployed web application adequately covered the top 14 stations for passenger"
+                "forecasting, while the general time series data analysis and and the graphical network"
+                "representation provided an overall analysis. The project outcome gives a reliable "
+                "prototype system that, if deployed and interatively developed, can support TFL in "
+                " achieving many of it's Tube management objectives which includes traffic control.")
+
+            st.markdown("- " "The Tube Twin project by Explore AI (2022) team 6 provides a good ground for "
+                "further research and improvement of passenger flow and traffic analyses on the London Tube. "
+                "We recommend expansion in the scope of passenger forecasting (i.e more stations) "
+                "taking into account certain social activiies and enviromental factors "
+                "(e.g social events and weather).")
+            st.markdown("- " "The next research on the project should consider a live streaming data collection "
+                "of the tube for a minimum period of one year as this will allow for collection of "
+                "comprehensive realtime data for higher forcasting accuracy. We also recommend ")
+
+            st.markdown("- " "This project and report are limited in scope based on the limited time to deliver" 
+                " a more robust system, as such, this report does not provide a conclusive and thorough " 
+                "explanation of passenger flow on the Tube, neither did it provide all intended solutions. "
+                "This is because available data of the Tube accessible by the team for this research is "
+                "not sufficient enough for more robust Tube forecasting solution or problem that may arise. ")
+            st.markdown("- " "Lastly, to be able to achieve interactive passenger forecasting system that not "
+                "only serve the management of the Tube but also the passengers, The Transport for London (TFL) "
+                "can consider integrating ***Live Weather Conditions*** at the point of data generation "
+                "to enable the analysis and forecating of passenger counts given a certain weather condition ")
+  
 
     if page_selection == 'Explorative Data Analysis [EDA]':
 
@@ -198,8 +290,15 @@ def main():
             st.write(ax.get_figure())
 
             with dataset:
-                st.write('***TIME SERIES VISUALIZATION***')
-                st.markdown('<p style="font-family:Courier; color:Blue; font-size: 20px;">TIME SERIES VISUALIZATION</p>', unsafe_allow_html=True)
+                st.markdown('''
+                <style>
+                [data-testid="stMarkdownContainer"] ul{
+                    list-style-position: inside;
+                }
+                </style>
+                ''', unsafe_allow_html=True)
+                st.markdown('<p style="font-family:Courier; color:Blue; font-size: 20px;">TIME SERIES VISUALIZATION</p>', 
+                    unsafe_allow_html=True)
                 # Building the function to help slice the required data for visualization
                 def get_data_top_stations(df, year, day, dire):
                 
@@ -319,8 +418,76 @@ def main():
     if page_selection == 'Train Simulation':
         st.title('TRAIN SIMULATION')
 
+        st.caption('here')
+        st.text_area('here')
+
+
     if page_selection == 'About Team':
         st.title('ABOUT TEAM')
+
+        # Building our company's profile page
+    if page_selection == "About The Team":
+        
+        st.title("TEAM PROFILE") 
+
+        st.info("Welcome to the Explore AI Team 6 The Tube Project Team")
+               
+        #Display Images side by side        
+        from PIL import Image        
+        col1, col2 = st.columns(2)
+        with col1:             
+            st.image('resources/images/emmanuel.jpeg', width =243)
+        with col2:
+            st.subheader("Fielami Emmanuel David")
+            st.markdown('''Data Scientist/Project Lead\n Phone Contact:\n Linkedin: ''')
+            # st.markdown('<p style="font-family:Savana; color:Black; font-size: 18px;"></p>', 
+            #         unsafe_allow_html=True)
+                                   
+        col3, col4 = st.columns(2)        
+        with col3:            
+            st.image('resources/images/michael.jpeg', width=243)    
+        with col4:
+            st.subheader("Michael Mamah")
+            st.write("Data Scientist") 
+
+        col5, col6 = st.columns(2)             
+        with col5:
+            st.image('resources/images/harmony.jpeg', width=243)                                          
+        with col6:
+            st.subheader("Kelvin Mwaniki")    
+            st.write("Data Sciencist")  
+
+        col11, col12 = st.columns(2)
+        with col11:            
+            st.image('resources/images/hakim.jpeg', width =243) 
+        with col12:
+            st.subheader("Hakin Balogun")
+            st.write("Data Engineer") 
+
+        col7, col8 = st.columns(2)  
+        with col7:  
+            st.image('resources/images/harmony.jpeg', width=243) 
+        with col8:
+            st.subheader("Hamony Odumuko")
+            st.write("Data Scientist") 
+
+        col9, col10 = st.columns(2)    
+        with col9:            
+            st.image('resources/images/endurance.jpeg', width=243)
+        with col10:
+            st.subheader("Endurance Arienkhe")
+            st.write("Data Scientist")     
+
+        # st.subheader("More information")
+        # if st.checkbox('Show contact information'): # data is hidden if box is unchecked
+        #     st.info("francisikegwu@yahoo.com, kininiabigael@gmail.com, mamahchidike@gmail.com,icontola@gmail.com, vicmeleka@gmail.com, nibotics@gmail.com") 
+        # with st.expander("Expand to see Company's video profile"):       
+        #     video_file = open('Kinini.mp4', 'rb')
+        #     video_bytes = video_file.read()
+        #     st.video(video_bytes)            
+        # st.sidebar.subheader("Defining growth through data")            
+        #     #st.success("Text Categorized as: {}".format(prediction))
+
 
 
 if __name__ == '__main__':

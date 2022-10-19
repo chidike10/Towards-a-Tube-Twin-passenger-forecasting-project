@@ -1,12 +1,12 @@
 id,name,colour_on_map,type,first_operated,length_in_miles,num_of_stations
 1,Bakerloo,Light Brown,Deep Tube,1906,14.5,25
-2,Central,Red,Deep Tube,1900,46,49
-3,Circle,Yellow,Sub-surface,1884,17,36
-4,District,Green,Sub-surface,1868,40,60
+2,Central,Red,Deep Tube,1900,46.0,49
+3,Circle,Yellow,Sub-surface,1884,17.0,36
+4,District,Green,Sub-surface,1868,40.0,60
 5,Hammersmith & City,Pink,Sub-surface,1988,15.9,29
 6,Jubilee,Silver,Deep Tube,1979,22.5,27
 7,Metropolitan,Dark Magenta,Sub-surface,1863,41.5,34
-8,Northern,Black,Deep Tube,1890,36,52
+8,Northern,Black,Deep Tube,1890,36.0,52
 9,Piccadilly,Dark Blue,Deep Tube,1906,44.3,53
 10,Victoria,Light Blue,Deep Tube,1968,13.2,16
 11,Waterloo & City,Turquoise,Deep Tube,1898,1.5,2
