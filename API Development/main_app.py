@@ -1,4 +1,6 @@
 import streamlit as st
+import streamlit.components.v1 as plot_components
+from pyvis.network import Network
 import pandas as pd
 import numpy as np
 import plotly.figure_factory as ff
@@ -63,7 +65,7 @@ page_options = [
     "About The Project",
     "Explorative Data Analysis [EDA]",
     "Passenger Forecast",
-    "Train Simulation",
+    "Tube Graph",
     "About The Team"
 ]
 api_options = [
@@ -115,7 +117,7 @@ def main():
         with header:
             st.title('The Tube Twin Project')
             st.image('resources/images/the tube.jpeg', use_column_width='always', output_format='jpeg')
-            st.subheader('The Summary')  
+            st.subheader('Summary')  
             st.write("With around 400km of rails, over 267 stations, and more than 1.3 billion "+ 
                 "passenger journeys each year (according to the project data), quickly andsafely "+ 
                 "moving passengers through stations and onto trains is an ongoing priority for "+ 
@@ -158,6 +160,7 @@ def main():
                 "larger circles. This importance is determined by some station (called the node) features "
                 "like the number of lines connecting on stations (edges)." )
             st.image('resources/images/bokeh_plot_new.png', width=600 )
+            st.info('***fig1 - NetworkX Image representation Tube Twin***')
 
             st.markdown("2. **A Simulation of the Tube Network**")
             st.write("We created a simulation of the tube network using SUMO. For this, we selected a "
@@ -168,9 +171,16 @@ def main():
                 "year, and day. We achieved this by making use of the Python library, FBProphet model in" 
                 "in a process called ***Transfer Learning***. This will allow Tfl to predict future "
                 "traffic and plan ahead of time.")
-
-            st.write("Although not limited to these, the above are the main focus which, all together ,"
-                "form the problem we tried to solve")  
+            st.write("The image below shows the the pictorial representation of the ***Moorgate Statio*** in "
+                "an outgoing direction on saturdays. ")  
+            st.image('resources/images/forecast.jpg', width=600 )
+            st.info('***fig2 - Moorgate station passengers forecast***')
+            st.write("In the forecast plot above, the dots in the graph represents the actual data points, while "
+                "the line represents the model predictions. The shaded region which the line runs through "
+                "is the ***boundary*** of the predictions given as lower and upper bounds. The entire region "
+                "from where the thick dots ends represent the forecasted region which is same as the peroid"
+                "of the station data (passenger counts in all 15 minutes time interval on saturdays)"
+                "") 
 
             st.subheader("Conclusion and Recommendation")
             st.write("The Tube Twin analysis and and passenger forecasting conducted in this project " 
@@ -199,6 +209,33 @@ def main():
                 "only serve the management of the Tube but also the passengers, The Transport for London (TFL) "
                 "can consider integrating ***Live Weather Conditions*** at the point of data generation "
                 "to enable the analysis and forecating of passenger counts given a certain weather condition ")
+
+            st.subheader("System Design and Development")
+            st.write("All applications were developed using python programming language and several open software " 
+                "packages like NetworkX, FBProphet, SUMO, and Streamlit. The diagram below depicts the flow of "
+                "processes of the project applications from start to finish. These include the use of AWS "
+                "resources (EC2 and S3) for computing and storage resources.")
+            st.image('resources/images/TubeTwin App Process Flow.jpg', width=600)
+            st.write("Looking at the diagram above, we can affirm that every data project after underground study "
+                "kickstarts with actual data collection from the data source. This ***Tube Twin*** project started "
+                "technically with the background study and data collection and engineering. After achieving "
+                "shaped into the required formats, they are then saved into the bucket on AWS where our applications "
+                "***clean datasets*** runs. All application codes are also stored in the S3 bucket attached to "
+                "the EC2 instance responsible for run the app")
+
+            st.markdown('<p style="font-family:Calibri; color:Black; font-size: 36px;">References</p>', 
+                unsafe_allow_html=True)
+
+            st.markdown("- Li-Yang (Edward) Chiang, Robert Crockett, Ian Johnson, Aidan O’Keefe. "
+                "(2017). Passenger Flow in the Tube.")
+            st.markdown("- Taylor SJ, Letham B. 2017. Forecasting at scale. PeerJ Preprints 5:e3190v2. "
+                "https://doi.org/10.7287/peerj.preprints.3190v2")
+            st.markdown("- Transport for London. (n.d.). Open data policy. Retrieved April 09, 2017, "
+                "from https://tfl.gov.uk/info-for/open-data-users/open-data-policy")
+
+
+            link = '[GitHub](http://github.com)'
+            st.markdown(link, unsafe_allow_html=True)
   
 
     if page_selection == 'Explorative Data Analysis [EDA]':
@@ -415,7 +452,68 @@ def main():
                 st.write(plot2)
  
 
-    if page_selection == 'Train Simulation':
+    if page_selection == 'Tube Graph':
+
+        # %matplotlib inline
+
+        import colorsys 
+        import numpy as np
+        import pandas as pd
+        import networkx as nx
+        import matplotlib.pyplot as plt 
+        from collections import Counter
+        from bokeh.plotting import figure, show
+        from bokeh.resources import CDN
+        from bokeh.io import output_notebook
+        output_notebook( resources=CDN )
+
+        pd.set_option('max_colwidth', 200) 
+
+        lines = pd.read_csv('../Data/TfL-Station-Data-detailed/Transformed/Wiki/Lines.csv', index_col=0) 
+        stations = pd.read_csv('../Data/TfL-Station-Data-detailed/Transformed/Stations_Coodinates.csv', index_col=0) 
+        connections = pd.read_csv('../Data/TfL-Station-Data-detailed/Transformed/LU_Loading_Data.csv') 
+
+        location = nx.read_gpickle("test/locations.gpickle")
+        pageranks = nx.read_gpickle("test/pageranks.gpickle")
+
+
+        p = figure(
+            x_range = (.4,.7), 
+            y_range = (.2,.5), 
+            height= 600, 
+            width=1000, 
+        )
+
+        for edge in graph.edges(): 
+            try: 
+                p.line( 
+                    x= [locations[pt][0] for pt in edge],
+                    y= [locations[pt][1] for pt in edge],
+                )
+            except KeyError:
+                pass 
+
+        for node in graph.nodes():
+            try: 
+                x = [locations[node][0]]
+                y = [locations[node][1]]
+                p.circle( 
+                    x, y, 
+                    radius = .01 * pageranks[node], 
+                    fill_color = pseudocolor(pageranks[node]), 
+                    line_alpha=0) 
+                p.text(
+                    x, y, 
+                    text = {'value':node}, 
+                    text_font_size = str(min(pageranks[node] * 12, 10)) + "pt", 
+                    text_alpha = pageranks[node],
+                    text_align='center',
+                    text_font_style='bold') 
+            except KeyError:
+                pass 
+            
+        show(p) 
+
         st.title('TRAIN SIMULATION')
 
         st.caption('here')
