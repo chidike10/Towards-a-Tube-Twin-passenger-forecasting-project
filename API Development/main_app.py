@@ -1,9 +1,6 @@
 import streamlit as st
-import streamlit.components.v1 as plot_components
-from pyvis.network import Network
 import pandas as pd
 import numpy as np
-import plotly.figure_factory as ff
 import matplotlib.pyplot as plt
 from prophet import Prophet
 import base64
@@ -16,6 +13,8 @@ import seaborn as sns
 import plotly.express as px
 import matplotlib.ticker as ticker
 from plotly.offline import plot
+import plotly.figure_factory as ff
+import streamlit.components.v1 as plot_components
 
 header = st.container()
 dataset = st.container()
@@ -111,6 +110,10 @@ def main():
                 st.subheader('URL: ' + api_dict['Line'])
                 df1 = get_api_records(api_dict['Line'])
                 st.dataframe(df1)
+
+    import pandas as pd
+    import numpy as np
+    import matplotlib.pyplot as plt
 
     if page_selection == 'About The Project':
     
@@ -271,6 +274,7 @@ def main():
             st.write("This Exploratory Data Analysis (EDA) brings key insights from the London Underground data " +
                 "by using visual plots to explore the historic data and tell few stories before we try to make " + 
                 "some forecast into the future passengercounts")
+            import pandas as pd
 
             data = pd.read_csv('resources/data/tube_time_interval_data_sorted.csv')
 
@@ -402,8 +406,11 @@ def main():
         
             return df_in_new_year
 
-        
         with dataset:
+            st.write("Provide the program some input details depending on the station to forecast passenger count")
+            st.write("The ***year*** column will select the historical tube data of the year we want to use "
+            "for the forcasting. The ***select day*** will select the day of week you want to forecast "
+            "while ***direction*** column will determine passenger movement direction from the station (IN or OUT).")
             station_option = st.selectbox('select station',
                 ('Bank and Monument', 'Waterloo LU', 'Oxford Circus','Canary Wharf LU', 
                     'Liverpool Street LU', 'Moorgate','London Bridge LU', 'Farringdon', 
@@ -421,20 +428,29 @@ def main():
 
             year_option = st.selectbox('year',
                 (2018, 2019, 2020, 2021))
-            year=year_option        
+            year=year_option      
 
             data = pd.read_csv('resources/data/tube_time_interval_data_sorted.csv')
             data['counts'] = data['counts'].round(decimals=0)
 
             df = get_data_year(data, station, day, dire, year)
-            st.header('Passenger Forecast By Station')
-            st.write(station + ' ' + 'station'+ ' '+ str(year) + ' ' + 'data view')
+            if day=='MTT':
+                day = "Mondays to Thursdays" 
+            elif day=='FRI':
+                day = "Fridays"
+            elif day=='SAT':
+                day = "Saturdays"
+            elif day=='SUN':
+                day = "Sundays" 
+            st.subheader('Passenger Forecast for '+ station+ " station on "+day)
+            st.write('Preview of the '+station + ' ' + 'station'+ ' '+ str(year) + ' ' + 'data (first 5 records)')
             st.write(df.head())
-            st.header('Visualize Historic Data for Selected Station and Day')
+            st.write("Click the **Visualize** button below to view the **Time Series** "
+                "graph of "+ station+ " station Historical Data on "+day + " for " +str(year))
             if st.button('Visualize'):
                 st.line_chart(df.rename(columns={'entry_date_time':'index'}).set_index('index'))
         
-            st.header('Passenger Forecasting for Selected Day')
+            st.subheader('***Passenger Count*** forecasting for '+station+ ' on '+ day+ " according to 15-minutes time interval")
             df.columns = ['ds', 'y']
             m = Prophet(interval_width=0.95, daily_seasonality=True)
             model = m.fit(df)
@@ -453,19 +469,6 @@ def main():
  
 
     if page_selection == 'Tube Graph':
-
-        # %matplotlib inline
-
-        import colorsys 
-        import numpy as np
-        import pandas as pd
-        import networkx as nx
-        import matplotlib.pyplot as plt 
-        from collections import Counter
-        from bokeh.plotting import figure, show
-        from bokeh.resources import CDN
-        from bokeh.io import output_notebook
-        output_notebook( resources=CDN )
 
         pd.set_option('max_colwidth', 200) 
 
@@ -537,7 +540,7 @@ def main():
             st.image('resources/images/emmanuel.jpeg', width =243)
         with col2:
             st.subheader("Fielami Emmanuel David")
-            st.markdown('''Data Scientist/Project Lead\n Phone Contact:\n Linkedin: ''')
+            st.markdown('Data Scientist ')
             # st.markdown('<p style="font-family:Savana; color:Black; font-size: 18px;"></p>', 
             #         unsafe_allow_html=True)
                                    
@@ -545,12 +548,12 @@ def main():
         with col3:            
             st.image('resources/images/michael.jpeg', width=243)    
         with col4:
-            st.subheader("Michael Mamah")
+            st.subheader("Michael Chidike Mamah")
             st.write("Data Scientist") 
 
         col5, col6 = st.columns(2)             
         with col5:
-            st.image('resources/images/harmony.jpeg', width=243)                                          
+            st.image('resources/images/kelvin.jpeg', width=243)                                          
         with col6:
             st.subheader("Kelvin Mwaniki")    
             st.write("Data Sciencist")  
