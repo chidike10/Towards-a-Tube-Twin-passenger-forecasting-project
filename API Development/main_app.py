@@ -357,7 +357,7 @@ def main():
                 
                     return df_in_new_year
 
-                st.write('Lets visualize the entire dataset to ')
+                st.write("Lets visualize the entire dataset to see passenger counts relations in the to stations")
 
                 data_top = pd.read_csv('resources/data/tube_time_interval_data_sorted.csv')
                 data_top['counts'] = data['counts'].round(decimals=0)
@@ -442,7 +442,7 @@ def main():
                 day = "Saturdays"
             elif day=='SUN':
                 day = "Sundays" 
-            st.subheader('Passenger Forecast for '+ station+ " station on "+day)
+            st.subheader('Passenger Forecast for '+ station+ " station on "+day+ " according to 15-minutes time interval")
             st.write('Preview of the '+station + ' ' + 'station'+ ' '+ str(year) + ' ' + 'data (first 5 records)')
             st.write(df.head())
             st.write("Click the **Visualize** button below to view the **Time Series** "
@@ -450,7 +450,8 @@ def main():
             if st.button('Visualize'):
                 st.line_chart(df.rename(columns={'entry_date_time':'index'}).set_index('index'))
         
-            st.subheader('***Passenger Count*** forecasting for '+station+ ' on '+ day+ " according to 15-minutes time interval")
+            st.write("Click the **Make Forecast** button to see the passenger movement "
+                "predition for "+station+ ' on '+ day)
             df.columns = ['ds', 'y']
             m = Prophet(interval_width=0.95, daily_seasonality=True)
             model = m.fit(df)
@@ -462,6 +463,8 @@ def main():
                 fig
                 # plot1 = m.plot(forecast)
                 # st.write(plot1)
+                st.info("The generated interactive chart above shows the passenger counts forecast graph for all 15-minutes intervals next "+ day +"for "+station+
+                    ". You hover around the chart to see the result for each 15-minutes time frame of interes, and drag along to see to the end of the day.")
             
             if st.button('Explore Componets of The Forecast'): 
                 plot2 = m.plot_components(forecast)
@@ -531,7 +534,7 @@ def main():
         
         st.title("TEAM PROFILE") 
 
-        st.info("Welcome to the Explore AI Team 6 The Tube Project Team")
+        st.info("**Welcome to the Explore AI Team 6 The Tube Project Team**")
                
         #Display Images side by side        
         from PIL import Image        
@@ -540,8 +543,9 @@ def main():
             st.image('resources/images/emmanuel.jpeg', width =243)
         with col2:
             st.subheader("Fielami Emmanuel David")
-            st.markdown('Data Scientist ')
-            # st.markdown('<p style="font-family:Savana; color:Black; font-size: 18px;"></p>', 
+            st.markdown('**Data Scientist**')
+            st.markdown('<p><b>LinkedIn</b>: <br> <b>Email</b>: <br> <b>Contact</b>: <br> <b>About</b> </p>', unsafe_allow_html=True)
+            # st.markdown('<p style="font-family:Savana; color:Black; font-size: 18px;">Contact:<br>Name<br>Phone</p>', 
             #         unsafe_allow_html=True)
                                    
         col3, col4 = st.columns(2)        
@@ -549,35 +553,47 @@ def main():
             st.image('resources/images/michael.jpeg', width=243)    
         with col4:
             st.subheader("Michael Chidike Mamah")
-            st.write("Data Scientist") 
+            st.write("**Data Scientist**")
+            st.markdown("<p><b>LinkedIn</b>: <a href='https://ng.linkedin.com/in/michael-mamah-b88b5315b'>Michael Mamah</a>"
+                "<br><b>Email</b>: mamachidike@mail.com<br><b>Contact</b>: +2348123234582<br>"
+                "<b>About</b>: Trained Data Scientist leveraging data, "
+                "machine learning, and cloud technologies to provide data solutions with "
+                "focus on efficient resource use, economic growth, and sustainable "
+                "developments. </p>", unsafe_allow_html=True)
 
         col5, col6 = st.columns(2)             
         with col5:
             st.image('resources/images/kelvin.jpeg', width=243)                                          
         with col6:
-            st.subheader("Kelvin Mwaniki")    
-            st.write("Data Sciencist")  
+            st.subheader("Kelvin Mwaniki")
+            st.write("**Data Sciencist**")
+            st.markdown('<p>LinkedIn:<br>Email:<br>Contact:</p>', unsafe_allow_html=True)
+        
 
         col11, col12 = st.columns(2)
         with col11:            
             st.image('resources/images/hakim.jpeg', width =243) 
         with col12:
             st.subheader("Hakin Balogun")
-            st.write("Data Engineer") 
+            st.write("**Data Engineer**") 
+            st.markdown('<p>LinkedIn:<br>Email:<br>Contact:</p>', unsafe_allow_html=True)
+
 
         col7, col8 = st.columns(2)  
         with col7:  
             st.image('resources/images/harmony.jpeg', width=243) 
         with col8:
             st.subheader("Hamony Odumuko")
-            st.write("Data Scientist") 
+            st.write("**Data Scientist**")
+            st.markdown('<p>LinkedIn:<br>Email:<br>Contact:</p>', unsafe_allow_html=True) 
 
         col9, col10 = st.columns(2)    
         with col9:            
             st.image('resources/images/endurance.jpeg', width=243)
         with col10:
             st.subheader("Endurance Arienkhe")
-            st.write("Data Scientist")     
+            st.write("**Data Scientist**")
+            st.markdown('<p>LinkedIn:<br>Email:<br>Contact:</p>', unsafe_allow_html=True)     
 
         # st.subheader("More information")
         # if st.checkbox('Show contact information'): # data is hidden if box is unchecked
