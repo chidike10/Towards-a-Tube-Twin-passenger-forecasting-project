@@ -64,7 +64,7 @@ page_options = [
     "About The Project",
     "Explorative Data Analysis [EDA]",
     "Passenger Forecast",
-    "Tube Graph",
+    "Tube Network Graph",
     "About The Team"
 ]
 api_options = [
@@ -469,56 +469,10 @@ def main():
             if st.button('Explore Componets of The Forecast'): 
                 plot2 = m.plot_components(forecast)
                 st.write(plot2)
- 
-
-    if page_selection == 'Tube Graph':
-
-        pd.set_option('max_colwidth', 200) 
-
-        lines = pd.read_csv('../Data/TfL-Station-Data-detailed/Transformed/Wiki/Lines.csv', index_col=0) 
-        stations = pd.read_csv('../Data/TfL-Station-Data-detailed/Transformed/Stations_Coodinates.csv', index_col=0) 
-        connections = pd.read_csv('../Data/TfL-Station-Data-detailed/Transformed/LU_Loading_Data.csv') 
-
-        location = nx.read_gpickle("test/locations.gpickle")
-        pageranks = nx.read_gpickle("test/pageranks.gpickle")
 
 
-        p = figure(
-            x_range = (.4,.7), 
-            y_range = (.2,.5), 
-            height= 600, 
-            width=1000, 
-        )
+    if page_selection == "Graph Network": 
 
-        for edge in graph.edges(): 
-            try: 
-                p.line( 
-                    x= [locations[pt][0] for pt in edge],
-                    y= [locations[pt][1] for pt in edge],
-                )
-            except KeyError:
-                pass 
-
-        for node in graph.nodes():
-            try: 
-                x = [locations[node][0]]
-                y = [locations[node][1]]
-                p.circle( 
-                    x, y, 
-                    radius = .01 * pageranks[node], 
-                    fill_color = pseudocolor(pageranks[node]), 
-                    line_alpha=0) 
-                p.text(
-                    x, y, 
-                    text = {'value':node}, 
-                    text_font_size = str(min(pageranks[node] * 12, 10)) + "pt", 
-                    text_alpha = pageranks[node],
-                    text_align='center',
-                    text_font_style='bold') 
-            except KeyError:
-                pass 
-            
-        show(p) 
 
         st.title('TRAIN SIMULATION')
 
@@ -544,7 +498,8 @@ def main():
         with col2:
             st.subheader("Fielami Emmanuel David")
             st.markdown('**Data Scientist**')
-            st.markdown('<p><b>LinkedIn</b>: <br> <b>Email</b>: <br> <b>Contact</b>: <br> <b>About</b> </p>', unsafe_allow_html=True)
+            st.markdown("<p><b>LinkedIn</b>: <a href='www.linkedin.com/in/fielami'>Emmanuel Fielami</a>"
+                "<br> <b>Email</b>: emmzytamara2@gmail.com<br> <b>Contact</b>: +2347067805884<br> <b>About</b> </p>", unsafe_allow_html=True)
             # st.markdown('<p style="font-family:Savana; color:Black; font-size: 18px;">Contact:<br>Name<br>Phone</p>', 
             #         unsafe_allow_html=True)
                                    
@@ -566,9 +521,10 @@ def main():
             st.image('resources/images/kelvin.jpeg', width=243)                                          
         with col6:
             st.subheader("Kelvin Mwaniki")
-            st.write("**Data Sciencist**")
-            st.markdown('<p>LinkedIn:<br>Email:<br>Contact:</p>', unsafe_allow_html=True)
-        
+            st.write("**Data Scientist**")
+            st.markdown("<p><b>LinkedIn</b>: <a href=''>Kelvin Mwaniki</a>"
+                "<br><b>Email</b>: mamachidike@mail.com<br><b>Contact</b>: +2348123234582<br>"
+                "<b>About</b>: </p>", unsafe_allow_html=True)
 
         col11, col12 = st.columns(2)
         with col11:            
