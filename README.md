@@ -1,4 +1,4 @@
-# Towards-a-Tube-Twin-Project---The-London-Tube---Explore-EDSA
+## Towards-a-Tube-Twin-Project---The-London-Tube---Explore-EDSA
 This repository contains the project files (notebook, data, etc) of the Explore Intern team-6's work on creating a digital twin of the London Tube and making general network traffic analyses from the tube data. 
 
 # The Project 
