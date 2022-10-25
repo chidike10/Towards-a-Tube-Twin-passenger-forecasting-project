@@ -1,0 +1,92 @@
+=============
+
+The Twin Tube
+
+	Introduction
+	
+	The Team:
+	Hi everyone, this is team 6. A team of six individuals from the data science and data engineering cohort. We have been assigned
+	the Tube Twin project and this is our presentation on how we plan to execute it and what we've been able to achieve so far. 
+		
+	The project: 
+	Tube Twin (Passenger count forecasting/general Tube analysis) 
+	This is a digital twin of the london tube that can be used for passenger count and traffic analyses/forecasting. 
+	
+	The Client:
+	The London Underground 	
+	The London Underground (aka “The Tube”) is a network of train stations which connects the city of London. 
+=======================================
+
+	Solution 
+	
+	Our proposed solution include achieving the following: 
+	
+	Create a digital representation of the Tube: 
+	A graph representation of the network (either via a simple Python library like networkx or if there is more substantial data
+	engineering expertise in the team, and if it makes technical sense, via a graph database). 
+		
+	Develop	a passenger count forecasting model: 
+	A passenger count forecast at each station (entry and exit), in 15 minutes increments, based on time of day, and counts at 
+	other stations. 
+	
+	Analyse historic passenger count data: 
+	A study of the effect of significant events (holidays, football games, etc) on traffic as well as the relationships between counts at 
+	different stations. 
+========================================  
+
+Intern Team : Team 6 (2201AC-Team6-Tube-Twin) 
+Project: Tube Twin (passenger count forecasting/general tube analysis) 
+
+Member Details: 
+	Names: Emmanuel David 
+		   Kelvin Mwaniki 
+		   Hakim Balogun 
+		   Michael Mamah 
+		   Endurance Arienkhe 
+		   Harmony Odumuko 
+
+	Email: emmzytamara2@gmail.com 
+		   mwaniki.kelvin918@gmail.com 
+		   hakim.obalogun@gmail.com 
+		   mamahchidike@gmail.com 
+		   endurance.arienkhe@gmail.com 
+		   nibotics@gmail.com 
+
+AWS 
+S3
+Name - interns-t6-2201-tube-twin 
+
+EC2
+AMI Template - ami-0b23604f872b0abe6 
+ID - i-03ca934c6bd7c74cf 
+IAM Role  - ec2_access_intern_buckets 
+Name - interns-t6-2201-tube-twin-ec2 
+Pub IP - Get latest from AWS  
+Prvt IP - 172.31.19.104 
+SSH - ssh explore-student@[Pub IP] 
+OR - ssh explore-student@ec2-[Pub IP].eu-west-1.compute.amazonaws.com 
+Update Apps - sudo yum update, sudo apt(-get) update 
+================================================= 
+
+Team Meeting: 
+Dailies Scrum: 
+	Join link: https://meet.google.com/ggw-rhsv-jga 
+	Calendar: https://calendar.google.com/calendar/r?eid=NTZrZDRsb3FmbnJ1ZHVsZ290cmw0dWJhZW0gaGFraW0ub2JhbG9ndW5AbQ&ctok=aGFraW0ub2JhbG9ndW5AZ21haWwuY29t 
+
+Meeting with Facilitators: 
+Check-In: 
+	Join link: https://meet.google.com/ffz-nsoe-odt 
+	Calendar: https://calendar.google.com/calendar/r?eid=NDdpMm44MnRscm1mM2VhcXJwMTN0ZTkwbmsgaGFraW0ub2JhbG9ndW5AbQ&ctok=aGFraW0ub2JhbG9ndW5AZ21haWwuY29t 
+
+Debrief: 
+	Join link: https://meet.google.com/buf-pmzm-eim 
+	Calendar:https://calendar.google.com/calendar/r?eid=M2k2bzFncGUzNWxzbGQ4amFjZ25nNzZqMDUgaGFraW0ub2JhbG9ndW5AbQ&ctok=aGFraW0ub2JhbG9ndW5AZ21haWwuY29t 
+=================================================
+
+GitHub Repo: 
+	Web link: https://github.com/chidike10/Towards-a-Tube-Twin-Project---The-London-Tube---Explore-EDSA 
+	Clone command: git clone git@github.com:chidike10/Towards-a-Tube-Twin-Project---The-London-Tube---Explore-EDSA.git 
+Discord Server: https://discord.com/channels/983710598686720072/1009195096597606410 
+Trello Board: https://trello.com/b/Llnr1bPs/the-tubetwin-project-team-6 
+WhatsApp: https://chat.whatsapp.com/Fz0693UqcDQAeaRPKSJanF 
+==================================================
