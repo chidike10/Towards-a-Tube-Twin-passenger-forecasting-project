@@ -1484,7 +1484,7 @@ def main():
         with col7:
             st.image('resources/images/hakim.jpeg', width=243)
         with col8:
-            st.subheader("Hakin Balogun")
+            st.subheader("Hakim Balogun")
             st.write("**Data Engineer**")
             st.markdown("<p>LinkedIn</b>: <a href='https://www.linkedin.com/in/hakimbalogun'>Hakim Balogun</a>"
                         "<br>Email</b>: hakim.obalogun@gmail.com"
