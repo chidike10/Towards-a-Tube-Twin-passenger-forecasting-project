@@ -12,9 +12,9 @@ dataset = st.container()
 st.set_option('deprecation.showPyplotGlobalUse', False) 
 
 # Graph Network Files 
-lu_stations = pd.read_csv('C:/Internship/EXPLORE-TubeTwinProject-Team6/Data/TfL-Station-Data-detailed/Transformed/Stations_Coodinates.csv', index_col=0) 
-connections = pd.read_csv('C:/Internship/EXPLORE-TubeTwinProject-Team6/Data/TfL-Station-Data-detailed/Transformed/LU_Loading_Data.csv') 
-lu_lines = pd.read_csv('C:/Internship/EXPLORE-TubeTwinProject-Team6/Data/TfL-Station-Data-detailed/Transformed/Wiki/Lines.csv', index_col=0) 
+lu_stations = pd.read_csv('../Data/TfL-Station-Data-detailed/Transformed/Stations_Coodinates.csv', index_col=0) 
+connections = pd.read_csv('../Data/TfL-Station-Data-detailed/Transformed/LU_Loading_Data.csv') 
+lu_lines = pd.read_csv('../Data/TfL-Station-Data-detailed/Transformed/Wiki/Lines.csv', index_col=0) 
 
 page_options = [
     "Landing Page", 
@@ -58,11 +58,14 @@ def main():
                 
                 st.markdown('We can see from the above graph what the London Tube connections look like. Nodes which are ditached from the network are stations from the Stations_Coordinates.csv file that has no loading record in the LU_Loading_Data.csv file. \
                             Although this is not a realistic representation of the stations location compared to what they would look like on a geographical map.') 
-                st.markdown('Already we can even do some analysing on the graph, like getting a reasonable (shortest) path between the stations `Oxford Circus` and `Canary Wharf`') 
+                st.markdown('Already we can even do some analysing on the graph, like getting a reasonable (shortest) path between two stations by choosing `source_station` and `target_station` below') 
+                
+                from_station_option = st.selectbox('Choose Source Station', connections['from_station'].unique()) 
+                to_station_option = st.selectbox('Choose Target Station', connections['to_station'].unique()) 
+                if st.button('Show Path'): 
+                    st.write(nx.shortest_path(simple_graph, from_station_option, to_station_option)) 
 
-                st.write(nx.shortest_path(simple_graph, 'Oxford Circus', 'Canary Wharf')) 
-
-                st.markdown('Also we can run the PageRank and Hits algorithm on the network to messure the connections between the LU stations. Both of these compares the nodes (LU stations) using the numbers of connections found between them.')
+                st.markdown('Also we can run the `PageRank` and `Hits` algorithm on the network to messure the connections between the LU stations. Both of these compares the nodes (LU stations) using the numbers of connections found between them.')
                 st.markdown("This time though, we'll focus on the stations that has connections between them as edges.") 
 
                 graph = nx.Graph() 
@@ -72,12 +75,14 @@ def main():
                 pagerank = pd.DataFrame(pagerank.items(), columns=['name', 'pagerank'])
                 stations = pd.merge(lu_stations, pagerank, on='name') 
 
+                st.write('Top 10 stations according to `Pagerank` algorithm') 
                 st.write(stations.sort_values('pagerank', ascending=False).head(10)) 
 
                 hits = nx.hits_scipy(graph, max_iter=1000)[0]
                 hits = pd.DataFrame(hits.items(), columns=['name', 'hits'])
                 stations = pd.merge(stations, hits, on='name') 
 
+                st.write('Top 10 stations according to `Hits` algorithm') 
                 st.write(stations.sort_values('hits', ascending=False).head(10)) 
 
                 st.markdown('We show the top 10 station rank for both PageRank and Hits comparison above. Where PageRank finds the most important stations, the HITS algorithm seems to be pretty good at finding the busiest stations. To fully understand this, we can say the network relies on the important stations to function and without them, operations will be affected significantly. But the busiest stations does not impact the network operation in such significant way, they only tell us which stations has the highest traffic.') 
@@ -132,10 +137,10 @@ def main():
                             text_align='center',
                             text_font_style='bold') 
                     except KeyError:
-                        pass                 
+                        pass 
 
                 st.bokeh_chart(p) # Optional argument (use_container_width=True) 
-                # show(p) 
+                # show(p)  
 
                 st.markdown('### Further analyses that can be done on this graph include the following:') 
                 st.markdown('* Degree Centrality') 
