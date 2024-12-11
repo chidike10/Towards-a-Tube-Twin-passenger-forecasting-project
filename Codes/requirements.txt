@@ -8,4 +8,4 @@ scikit-learn
 matplotlib
 prophet
 seaborn
-pickle
+pickle5
