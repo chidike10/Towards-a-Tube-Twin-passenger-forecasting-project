@@ -1,0 +1,8 @@
+streamlit
+plotly
+pandas
+numpy
+bokeh
+networkx
+scikit-learn
+matplotlib
