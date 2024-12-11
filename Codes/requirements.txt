@@ -6,3 +6,4 @@ bokeh
 networkx
 scikit-learn
 matplotlib
+prophet
