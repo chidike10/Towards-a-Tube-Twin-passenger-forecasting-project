@@ -461,7 +461,7 @@ def main():
                 (2018, 2019, 2020, 2021))
             year=year_option      
 
-            data = pd.read_csv('resources/data/tube_time_interval_data_sorted.csv')
+            data = pd.read_csv(DATA_FILE)
             data['counts'] = data['counts'].round(decimals=0)
 
             df = get_data_year(data, station, day, dire, year)
