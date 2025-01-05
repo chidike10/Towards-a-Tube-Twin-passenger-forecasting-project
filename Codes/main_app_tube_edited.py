@@ -286,7 +286,8 @@ def main():
 
             st.write('The data for the London Underground is a time series data collected over a period of 4 years ' +
                 "that shows the passenger counts (Inflow and Outflows) for all stations in the network in different days "
-                + "of the week")
+                + "of the week. This was collected from the Traffic for London (TfL) website and engineered " + 
+                "to fit our project expected outcome")
 
             st.write("The days as captured in the data with their notations are:")
             st.markdown("- Mondays to Thursdays (MTT)")
@@ -303,8 +304,8 @@ def main():
             ''', unsafe_allow_html=True)
 
             st.write("This Exploratory Data Analysis (EDA) brings key insights from the London Underground data " +
-                "by using visual plots to explore the historic data and tell few stories before we try to make " + 
-                "some forecast into the future passengercounts")
+                "by using visual plots to explore the historical data and tell few stories before we try to make " + 
+                "some forecast into the future passenger counts")
             import pandas as pd
 
             data = pd.read_csv(DATA_FILE)
@@ -330,21 +331,21 @@ def main():
             st.write(df_top)
 
             st.write('From the result shown in the table above, we can see that the ***Bank and Monument*** '+
-                'and ***Waterloo LU*** stations are 2 most busiest ,and the trend is spread across different years'+
-                ' and interestingly they both lie in the same ***zone 1*** '+ "of The Tube map. This shows a "+ 
+                'and ***Waterloo LU*** stations are 2 most busiest, and the trend is spread across different years;'+
+                ' interestingly they both lie in the same ***zone 1*** '+ "of The Tube map. This shows a "+ 
                 "potential heavy weight on the associated lines. We will explore these stations.")
 
             st.write('The following list of stations are those captured in the dataset above with passenger counts ' +
-                'greater than 3000 for the corresponding years in the daily 15 minutes time interval.' + 
-                ' These stations will be our main focus of interest in this exploration and also in the passenger counts forecasting '+
-                'As understanding the factors contributing to the busy passenger flow (IN and OUT) of the station will '+
+                'greater than 3000 for their corresponding years in the daily 15 minutes time interval.' + 
+                ' These stations will be our main focus of interest in this exploration, and also in the passenger counts forecasting '+
+                'as understanding the factors contributing to the busy passenger flow (IN and OUT) of the station will '+
                 'help us make good recommendations to TFL on improving the London Underground (The Tube) network lines')
             top_station = df_top['station'].unique()
             st.write(top_station)
 
             st.write("Using an interactive ***Bar Chart***, we can visualize these stations and look at the ***Time*** associated "+
                 "with the high traffic per stations. With the station legends ***(Names)*** on the right of the chart, we can "+
-                "select the stations we want to view by dehighlighting other station. This presents a bolder non-clustered chart")
+                "select the stations we want to view by dehighlighting other stations. This presents a bolder non-clustered chart")
 
             df_bar = df_top.head(500)
             # df_bar = df_bar.set_index('time')
@@ -352,8 +353,8 @@ def main():
             st.plotly_chart(fig)
 
             st.write("The Bar Chart above provided the right insight on the ***Time*** and ***Stations*** with highest passenger "+
-                "traffic. But to view the year that produced the top 30 recorded passenger counts within the period of 4 years, "+
-                "we will use a static Bar Chart this time. The plot below presents that data with complete date and time on X-axis. "+
+                "traffic. But to view the time in all the entire data (all years inclusive) that produced the top 30 recorded passenger counts within the period of 4 years, "+
+                "we will use a static Bar Chart this time. The plot below presents the data with complete date and time on X-axis. "+
                 "and Passenger counts on Y-axis")
             from plotly.offline import plot
             ax = sns.barplot(x = 'entry_date_time', y = 'counts', data = df_top.sort_values('counts', ascending=False).head(30),  
@@ -441,7 +442,8 @@ def main():
             st.write("Provide the program some input details depending on the station to forecast passenger count")
             st.write("The ***year*** column will select the historical tube data of the year we want to use "
             "for the forcasting. The ***select day*** will select the day of week you want to forecast "
-            "while ***direction*** column will determine passenger movement direction from the station (IN or OUT).")
+            "while ***direction*** column will determine passenger movement direction from the station (IN or OUT)."
+            "Note the data dynamically changing as you select the station, day, direct, and year inputs")
             station_option = st.selectbox('select station',
                 ('Bank and Monument', 'Waterloo LU', 'Oxford Circus','Canary Wharf LU', 
                     'Liverpool Street LU', 'Moorgate','London Bridge LU', 'Farringdon', 
