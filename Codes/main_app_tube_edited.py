@@ -118,7 +118,11 @@ def main():
     bokeh_graph_image = get_file_path("resources", "images", "bokeh_plot_new.png")
     forecast_image = get_file_path("resources", "images", "forecast.jpg")
     app_process_image = get_file_path("resources", "images", "TubeTwin App Process Flow.jpg")
-
+    michael_image = get_file_path("resources", "images", "michael.jpeg")
+    emmanuel_image = get_file_path("resources", "images", "emmanuel.jpeg")
+    hakim_image = get_file_path("resources", "images", "hakim.jpeg")
+    harmony_image = get_file_path("resources", "images", "harmony.jpeg")
+    endurance_image = get_file_path("resources", "images", "endurance.jpeg")
 
     st.sidebar.image(sidebar_image, use_column_width=True)
     page_selection = st.sidebar.selectbox("PAGE SELECTION", page_options)
@@ -386,7 +390,7 @@ def main():
 
                 st.write("Lets visualize the entire dataset to see passenger counts relations in the to stations")
 
-                data_top = pd.read_csv('resources/data/tube_time_interval_data_sorted.csv')
+                data_top = pd.read_csv(DATA_FILE)
                 data_top['counts'] = data['counts'].round(decimals=0)
 
                 list_station = ['Bank and Monument', 'Waterloo LU', 'Oxford Circus',
@@ -637,7 +641,7 @@ def main():
 
         col1, col2 = st.columns(2)        
         with col1:            
-            st.image('resources/images/michael.jpeg', width=243)    
+            st.image(michael_image, width=243)    
         with col2:
             st.subheader("Michael Chidike Mamah")
             st.write("**Data Scientist**")
@@ -650,7 +654,7 @@ def main():
 
         col3, col4 = st.columns(2)
         with col3:             
-            st.image('resources/images/emmanuel.jpeg', width =243)
+            st.image(emmanuel_image, width =243)
         with col4:
             st.subheader("Fielami Emmanuel David")
             st.markdown('**Data Scientist**')
@@ -672,7 +676,7 @@ def main():
 
         col11, col12 = st.columns(2)
         with col11:            
-            st.image('resources/images/hakim.jpeg', width =243) 
+            st.image(hakim_image, width =243) 
         with col12:
             st.subheader("Hakim Balogun")
             st.write("**Data Engineer**") 
@@ -682,7 +686,7 @@ def main():
 
         col7, col8 = st.columns(2)  
         with col7:  
-            st.image('resources/images/harmony.jpeg', width=243) 
+            st.image(harmony_image, width=243) 
         with col8:
             st.subheader("Hamony Odumuko")
             st.write("**Data Scientist**")
@@ -692,7 +696,7 @@ def main():
 
         col9, col10 = st.columns(2)    
         with col9:            
-            st.image('resources/images/endurance.jpeg', width=243)
+            st.image(endurance_image, width=243)
         with col10:
             st.subheader("Endurance Arienkhe")
             st.write("**Data Scientist**")
