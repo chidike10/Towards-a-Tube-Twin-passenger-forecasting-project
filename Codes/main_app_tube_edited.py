@@ -443,7 +443,7 @@ def main():
             st.write("The ***year*** column will select the historical tube data of the year we want to use "
             "for the forcasting. The ***select day*** will select the day of week you want to forecast "
             "while ***direction*** column will determine passenger movement direction from the station (IN or OUT)."
-            "Note the data dynamically changing as you select the station, day, direct, and year inputs")
+            " Note the data dynamically changing as you select the station, day, direct, and year inputs")
             station_option = st.selectbox('select station',
                 ('Bank and Monument', 'Waterloo LU', 'Oxford Circus','Canary Wharf LU', 
                     'Liverpool Street LU', 'Moorgate','London Bridge LU', 'Farringdon', 
