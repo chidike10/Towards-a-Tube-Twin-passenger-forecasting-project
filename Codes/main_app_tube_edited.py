@@ -216,6 +216,19 @@ def main():
                 "of the station data (passenger counts in all 15 minutes time interval on saturdays)"
                 "") 
 
+            st.subheader("System Design and Development")
+            st.write("All applications were developed using python programming language and several open software " 
+                "packages like NetworkX, FBProphet, SUMO, and Streamlit. The diagram below depicts the flow of "
+                "processes of the project applications from start to finish. These include the use of AWS "
+                "resources (EC2 and S3) for computing and storage resources.")
+            st.image(app_process_image, width=600)
+            st.write("Looking at the diagram above, we can affirm that every data project after underground study "
+                "kickstarts with actual data collection from the data source. This ***Tube Twin*** project started "
+                "technically with the background study and data collection and engineering. After achieving "
+                "shaped into the required formats, they are then saved into the bucket on AWS where our applications "
+                "***clean datasets*** runs. All application codes are also stored in the S3 bucket attached to "
+                "the EC2 instance responsible for run the app")
+
             st.subheader("Conclusion and Recommendation")
             st.write("The Tube Twin analysis and and passenger forecasting conducted in this project " 
                 "provides the solution to the traffic issues in the heavily-weighted Tube station lines. "
@@ -243,19 +256,6 @@ def main():
                 "only serve the management of the Tube but also the passengers, The Transport for London (TFL) "
                 "can consider integrating ***Live Weather Conditions*** at the point of data generation "
                 "to enable the analysis and forecating of passenger counts given a certain weather condition ")
-
-            st.subheader("System Design and Development")
-            st.write("All applications were developed using python programming language and several open software " 
-                "packages like NetworkX, FBProphet, SUMO, and Streamlit. The diagram below depicts the flow of "
-                "processes of the project applications from start to finish. These include the use of AWS "
-                "resources (EC2 and S3) for computing and storage resources.")
-            st.image(app_process_image, width=600)
-            st.write("Looking at the diagram above, we can affirm that every data project after underground study "
-                "kickstarts with actual data collection from the data source. This ***Tube Twin*** project started "
-                "technically with the background study and data collection and engineering. After achieving "
-                "shaped into the required formats, they are then saved into the bucket on AWS where our applications "
-                "***clean datasets*** runs. All application codes are also stored in the S3 bucket attached to "
-                "the EC2 instance responsible for run the app")
 
             st.markdown('<p style="font-family:Calibri; color:Black; font-size: 36px;">References</p>', 
                 unsafe_allow_html=True)
